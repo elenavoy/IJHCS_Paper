@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.24)  23 FEB 2016 20:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.24)  23 FEB 2016 20:33
 entering extended mode
 **elsarticle-template.tex
 (C:\Users\Elena\git\ijhcs2016\elsarticle-template.tex
@@ -286,71 +286,127 @@ LaTeX Info: Redefining \nameref on input line 40.
 (C:\Users\Elena\git\ijhcs2016\elsarticle-template.out)
 \@outlinefile=\write4
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 64.
+(Font)              <8> on input line 71.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 64.
+(Font)              <6> on input line 71.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 72.
+(Font)              <5> on input line 71.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 72.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 84.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
+(Font)              <7> on input line 71.
  [1
 
 
 {C:/Users/Elena/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
-Package natbib Warning: Citation `Feynman1963118' on page 2 undefined on input 
-line 106.
+Package natbib Warning: Citation `waterworth1991model' on page 2 undefined on i
+nput line 79.
 
 
-Package natbib Warning: Citation `Dirac1953888' on page 2 undefined on input li
-ne 106.
+Package natbib Warning: Citation `foster2003serendipity' on page 2 undefined on
+ input line 79.
+
+
+Package natbib Warning: Citation `proper1999information' on page 2 undefined on
+ input line 80.
+
+
+Package natbib Warning: Citation `lindley2012s' on page 2 undefined on input li
+ne 80.
+
+
+Package natbib Warning: Citation `bates1986exploratory' on page 2 undefined on 
+input line 80.
+
+
+Package natbib Warning: Citation `conaway2010designing' on page 2 undefined on 
+input line 80.
+
+
+Package natbib Warning: Citation `marchionini2006exploratory' on page 2 undefin
+ed on input line 80.
+
+
+Package natbib Warning: Citation `proper1999information' on page 2 undefined on
+ input line 82.
+
+
+Package natbib Warning: Citation `kerne2004information' on page 2 undefined on 
+input line 82.
+
+
+Package natbib Warning: Citation `bates1986exploratory' on page 2 undefined on 
+input line 82.
+
+
+Package natbib Warning: Citation `choo2000information' on page 2 undefined on i
+nput line 82.
+
+
+Package natbib Warning: Citation `ellis1989behavioural' on page 2 undefined on 
+input line 82.
+
+
+Package natbib Warning: Citation `kellar2006goal' on page 2 undefined on input 
+line 82.
+
+
+Package natbib Warning: Citation `lindley2012s' on page 2 undefined on input li
+ne 82.
+
+
+Package natbib Warning: Citation `morrison2001taxonomic' on page 2 undefined on
+ input line 82.
+
+
+Package natbib Warning: Citation `sellen2002knowledge' on page 2 undefined on i
+nput line 82.
+
+[2]
+
+Package natbib Warning: Citation `Feynman1963118' on page 3 undefined on input 
+line 99.
+
+
+Package natbib Warning: Citation `Dirac1953888' on page 3 undefined on input li
+ne 99.
 
 No file elsarticle-template.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
+[3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
  (C:\Users\Elena\git\ijhcs2016\elsarticle-template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
 Package rerunfilecheck Info: File `elsarticle-template.out' has not changed.
-(rerunfilecheck)             Checksum: 61C3E43F85DFD4E056CD0D095DD551E9;165.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
+(rerunfilecheck)             Checksum: A1C92AF4D1D297B64958F0F65CA3FFC9;151.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
  ) 
 Here is how much of TeX's memory you used:
- 5758 strings out of 493921
- 83794 string characters out of 3144876
- 165377 words of memory out of 3000000
- 9001 multiletter control sequences out of 15000+200000
- 8442 words of font info for 30 fonts, out of 3000000 for 9000
+ 5753 strings out of 493921
+ 83747 string characters out of 3144876
+ 166377 words of memory out of 3000000
+ 9000 multiletter control sequences out of 15000+200000
+ 8274 words of font info for 29 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,7n,30p,436b,401s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,7n,30p,1093b,334s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on elsarticle-template.pdf (2 pages, 163464 bytes).
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on elsarticle-template.pdf (3 pages, 143895 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 89 PDF objects out of 1000 (max. 8388607)
  13 named destinations out of 1000 (max. 500000)
  25 words of extra memory for PDF output out of 10000 (max. 10000000)
 

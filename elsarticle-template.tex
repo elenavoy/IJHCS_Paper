@@ -51,8 +51,8 @@
 \address{University of Victoria}
 \address{3800 Finnerty Rd, Victoria, BC, Canada, V8P 5C2}
 
-\author[peggyemail]{mstorey@uvic.ca}
-\author[elenaemail]{elenavoy@uvic.ca}
+\address[peggyemail]{mstorey@uvic.ca}
+\address[elenaemail]{elenavoy@uvic.ca}
 
 %% or include affiliations in footnotes:
 \cortext[mycorrespondingauthor]{Corresponding author}
@@ -61,34 +61,27 @@
 
 
 \begin{abstract}
-This template helps you to create a properly formatted \LaTeX\ manuscript.
+Everyday life involves the discovery and curation of digital information. People search the Web continuously, from quickly looking up information needed to complete a task, to endlessly searching for inspiration and knowledge. A variety of studies have modeled information seeking strategies and characterized curation activities on the Web. However, there is a lack of research on how existing Web applications support the discovery and curation of information, especially concerning user motivations and how different approaches can be compared. This paper presents a study of information discovery tools and how they relate to the nature of information seeking. We propose a conceptual framework of application design elements that support different aspects of information discovery and curation. This framework can be used for designing, evaluating and updating Web applications.
 \end{abstract}
 
 \begin{keyword}
-\texttt{elsarticle.cls}\sep \LaTeX\sep Elsevier \sep template
-\MSC[2010] 00-01\sep  99-00
+Information discovery \sep information curation \sep Web design
 \end{keyword}
 
 \end{frontmatter}
 
 \linenumbers
 
-\section{The Elsevier article class}
+\section{Introduction}
 
-\paragraph{Installation} If the document class \emph{elsarticle} is not available on your computer, you can download and install the system package \emph{texlive-publishers} (Linux) or install the \LaTeX\ package \emph{elsarticle} using the package manager of your \TeX\ installation, which is typically \TeX\ Live or Mik\TeX.
+Web technologies help people satisfy their information needs. People research their interests and hobbies using various online resources, shoppers search online stores for product characteristics to make purchasing decisions, and travelers visit online booking sites to find information about flights and hotels. To accommodate diverse and evolving user needs, Web applications continuously introduce new features and services, empowering information discovery and curation. 
 
-\paragraph{Usage} Once the package is properly installed, you can use the document class \emph{elsarticle} to create a manuscript. Please make sure that your manuscript follows the guidelines in the Guide for Authors of the relevant journal. It is not necessary to typeset your manuscript in exactly the same way as an article, unless you are submitting to a camera-ready copy (CRC) journal.
+The term ``information discovery'' has been used to define or explain various information behaviour paradigms, such as information exploration~\cite{waterworth1991model} and serendipitous information seeking~\cite{foster2003serendipity}.  
+Information discovery can take on many forms. Web users might be hoping to find particular pieces of information, such as show times and phone numbers, to satisfy specific information needs~\cite{proper1999information}. Alternatively, they might be lacking well-articulated information needs, so they engage in opportunistic browsing~\cite{lindley2012s}. Sometimes people discover information online without even looking for it~\cite{bates1986exploratory}. The nature of information discovery can vary, and therefore, requires elaborate tool support. With people having such diverse information needs and methods of looking for information, designing for information discovery is a challenging task~\cite{conaway2010designing, marchionini2006exploratory}.
 
-\paragraph{Functionality} The Elsevier article class is based on the standard article class and supports almost all of the functionality of that class. In addition, it features commands and options to format the
-\begin{itemize}
-\item document style
-\item baselineskip
-\item front matter
-\item keywords and MSC codes
-\item theorems, definitions and proofs
-\item lables of enumerations
-\item citation style and labeling.
-\end{itemize}
+Our research goal is to gain an understanding of how existing tools support digital information discovery and curation so that we can improve the design of Web applications for information discovery. While several researchers propose frameworks targeted at designing information discovery systems~\cite{proper1999information, kerne2004information}, the importance of information curation in the realm of information discovery has been largely overlooked despite the rapidly increasing popularity of socially-curated information spaces. Moreover, much of the existing work that focuses on how people look for and discover information online~\cite{bates1986exploratory, choo2000information, ellis1989behavioural, kellar2006goal, lindley2012s, morrison2001taxonomic, sellen2002knowledge} fails to examine concrete features of existing Web-based information discovery applications that empower real-world users. More research is necessary to determine how different tool features provide fundamental support for information discovery and curation.
+
+To enhance information seeking and curating experiences and support users' interactions, we extend existing research by: (1) deriving factors that enable information discovery and curation and relating them within a framework; (2) using the framework to establish a set of questions for evaluating and designing new applications; (3) iteratively evaluating the framework by using it to study and describe current Web applications, which in turn helped refine the framework of factors and questions; and (4) relating the framework to information discovery and curation motives that drive the underlying usage of Web-based applications.
 
 \section{Front matter}
 
