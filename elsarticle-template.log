@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.24)  24 FEB 2016 18:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.24)  24 FEB 2016 18:39
 entering extended mode
 **elsarticle-template.tex
 (C:\Users\Elena\git\ijhcs2016\elsarticle-template.tex
@@ -239,20 +239,20 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip47
 )
 (C:\Users\Elena\git\ijhcs2016\elsarticle-template.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 
 (C:\Users\Elena\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -269,7 +269,7 @@ LaTeX Font Info:    ... okay on input line 40.
 \everyMPtoPDFconversion=\toks19
 )
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 40.
+Package hyperref Info: Link coloring OFF on input line 43.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -278,73 +278,357 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count118
 )
-LaTeX Info: Redefining \ref on input line 40.
-LaTeX Info: Redefining \pageref on input line 40.
-LaTeX Info: Redefining \nameref on input line 40.
+LaTeX Info: Redefining \ref on input line 43.
+LaTeX Info: Redefining \pageref on input line 43.
+LaTeX Info: Redefining \nameref on input line 43.
 
 (C:\Users\Elena\git\ijhcs2016\elsarticle-template.out)
 (C:\Users\Elena\git\ijhcs2016\elsarticle-template.out)
 \@outlinefile=\write4
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 71.
+(Font)              <8> on input line 75.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 71.
+(Font)              <6> on input line 75.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 71.
+(Font)              <5> on input line 75.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 71.
+(Font)              <7> on input line 75.
  [1
 
 
 {C:/Users/Elena/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-(C:\Users\Elena\git\ijhcs2016\elsarticle-template.bbl [3])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
+Overfull \hbox (0.37564pt too wide) in paragraph at lines 92--93
+[]\OT1/cmr/m/n/10 Given the com-plex-ity of Web-based in-for-ma-tion dis-cov-er
+y and cu-ra-tion tasks,
+ []
 
-(C:\Users\Elena\git\ijhcs2016\elsarticle-template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+[3] [4] [5] [6] [7] [8]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 216.
+ [9] [10]
+<figures/framework_overview.pdf, id=253, 343.2825pt x 333.245pt>
+File: figures/framework_overview.pdf Graphic file (type pdf)
+
+<use figures/framework_overview.pdf>
+Package pdftex.def Info: figures/framework_overview.pdf used on input line 301.
+
+(pdftex.def)             Requested size: 345.0pt x 334.91202pt.
+ [11] [12 <C:/Users/Elena/git/ijhcs2016/figures/framework_overview.pdf>]
+Overfull \hbox (9.86165pt too wide) in paragraph at lines 319--324
+[]\OT1/cmr/m/n/10 The na-ture of an in-for-ma-tion need pre-de-ter-mines whethe
+r dis-cov-ery is serendip-
+ []
+
+[13] [14] [15]
+<figures/framework_enablers.pdf, id=322, 448.67625pt x 558.085pt>
+File: figures/framework_enablers.pdf Graphic file (type pdf)
+
+<use figures/framework_enablers.pdf>
+Package pdftex.def Info: figures/framework_enablers.pdf used on input line 381.
+
+(pdftex.def)             Requested size: 345.0pt x 429.1392pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
+[]\OT1/cmr/bx/n/9 Types of
+ []
 
 
-Package rerunfilecheck Warning: File `elsarticle-template.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
+\OT1/cmr/bx/n/9 dis-cov-
+ []
 
-Package rerunfilecheck Info: Checksums for `elsarticle-template.out':
-(rerunfilecheck)             Before: A1C92AF4D1D297B64958F0F65CA3FFC9;151
-(rerunfilecheck)             After:  1DB6ACF0CA858A323D5862A2C7FCFE6D;48.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
- ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
+\OT1/cmr/bx/n/9 ery and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
+\OT1/cmr/bx/n/9 cu-ra-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
+[]\OT1/cmr/m/n/9 Navigation
+ []
+
+
+Underfull \hbox (badness 3568) in paragraph at lines 401--402
+[]\OT1/cmr/m/n/9 Cognitive sup-port, per-son-al-iza-
+ []
+
+
+Overfull \hbox (9.97719pt too wide) in paragraph at lines 403--403
+[]\OT1/cmr/bx/n/9 Descriptional| 
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 403--404
+\OT1/cmr/bx/n/9 i-ga-tion mech-a-nisms be en-
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 404--404
+[]\OT1/cmr/m/n/9 Search-based nav-i-ga-tion / In-te-
+ []
+
+
+Underfull \hbox (badness 6001) in paragraph at lines 404--405
+[]\OT1/cmr/m/n/9 Personalized re-sults / Guided
+ []
+
+
+Underfull \hbox (badness 5288) in paragraph at lines 406--407
+[]\OT1/cmr/bx/n/9 How can ref-er-en-tial nav-i-
+ []
+
+
+Underfull \hbox (badness 3612) in paragraph at lines 406--407
+\OT1/cmr/bx/n/9 ga-tion mech-a-nisms be en-
+ []
+
+
+Overfull \hbox (13.06598pt too wide) in paragraph at lines 409--409
+[]\OT1/cmr/bx/n/9 Opportunistic| 
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 409--409
+[]\OT1/cmr/bx/n/9 How does the ap-pli-ca-tion
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 409--410
+\OT1/cmr/bx/n/9 i-ga-tion mech-a-nisms be en-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--411
+[]\OT1/cmr/bx/n/9 System-
+ []
+
+
+Underfull \hbox (badness 7468) in paragraph at lines 411--412
+[]\OT1/cmr/bx/n/9 How can system-regulated
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 412--413
+[]\OT1/cmr/m/n/9 Personalized fea-tured con-tent /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--414
+[]\OT1/cmr/m/n/9 Exploration
+ []
+
+
+Underfull \hbox (badness 3568) in paragraph at lines 414--415
+[]\OT1/cmr/m/n/9 Cognitive sup-port, per-son-al-iza-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--416
+\OT1/cmr/bx/n/9 tex-tual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--416
+\OT1/cmr/bx/n/9 cues of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--416
+\OT1/cmr/bx/n/9 mul-ti-ple
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--418
+\OT1/cmr/bx/n/9 tex-tual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--418
+\OT1/cmr/bx/n/9 cues of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--418
+\OT1/cmr/bx/n/9 a sin-gle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+[]\OT1/cmr/bx/n/9 Spatial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\OT1/cmr/bx/n/9 prox-i-mal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\OT1/cmr/bx/n/9 cues of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
+\OT1/cmr/bx/n/9 mul-ti-ple
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 420--421
+\OT1/cmr/bx/n/9 prox-i-mal cues be en-hanced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
+[]\OT1/cmr/bx/n/9 Spatial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
+\OT1/cmr/bx/n/9 prox-i-mal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
+\OT1/cmr/bx/n/9 cues of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
+\OT1/cmr/bx/n/9 a sin-gle
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 422--423
+\OT1/cmr/bx/n/9 prox-i-mal cues be en-hanced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--425
+[]\OT1/cmr/m/n/9 Curation
+ []
+
+
+Underfull \hbox (badness 3568) in paragraph at lines 425--426
+[]\OT1/cmr/m/n/9 Cognitive sup-port, per-son-al-iza-
+ []
+
+
+Overfull \hbox (8.35268pt too wide) in paragraph at lines 427--427
+[]\OT1/cmr/bx/n/9 Management| 
+ []
+
+
+Overfull \hbox (6.83214pt too wide) in paragraph at lines 429--429
+[]\OT1/cmr/bx/n/9 Preservation| 
+ []
+
+
+Overfull \hbox (14.57204pt too wide) in paragraph at lines 431--431
+[]\OT1/cmr/bx/n/9 Augmentation| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--435
+[]\OT1/cmr/bx/n/9 Channel-
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 435--435
+\OT1/cmr/bx/n/9 port the user in es-tab-lish-
+ []
+
+
+Overfull \hbox (282.75pt too wide) in paragraph at lines 397--439
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 1022.31061pt on input line 441.
+
+[16] [17 <C:/Users/Elena/git/ijhcs2016/figures/framework_enablers.pdf>]
+[18] [19] [20] [21]
+Overfull \hbox (7.69446pt too wide) in paragraph at lines 529--530
+[]\OT1/cmr/m/n/10 For op-por-tunis-tic nav-i-ga-tion, Web tools some-times al-l
+ow users to \OT1/cmtt/m/n/10 personalize
+ []
+
+[22] [23] [24]
+Overfull \hbox (5.87897pt too wide) in paragraph at lines 568--569
+\OT1/cmr/m/n/10 system-regulated mech-a-nisms. Al-though an ex-plicit \OT1/cmtt
+/m/n/10 opportunistic navigation
+ []
+
+
+Overfull \hbox (7.32161pt too wide) in paragraph at lines 578--579
+\OT1/cmr/m/n/10 and \OT1/cmtt/m/n/10 internal preservation of internal and exte
+rnal resources\OT1/cmr/m/n/10 . All user
+ []
+
+
+Overfull \hbox (3.0184pt too wide) in paragraph at lines 578--579
+\OT1/cmr/m/n/10 in-for-ma-tion col-lect-ing ac-tions are \OT1/cmtt/m/n/10 autom
+atically \OT1/cmr/m/n/10 pre-served and dis-played. Users
+ []
+
+
+Overfull \hbox (1.0456pt too wide) in paragraph at lines 578--579
+\OT1/cmtt/m/n/10 subscribing \OT1/cmr/m/n/10 to users or in-di-vid-ual `pin-boa
+rds'. The sys-tem also \OT1/cmtt/m/n/10 automatically
+ []
+
+[25] [26] [27] (C:\Users\Elena\git\ijhcs2016\elsarticle-template.bbl [28]
+[29]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ” in font cmr10!
+ [30] [31])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 616.
+ [32] [33]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 616.
+ (C:\Users\Elena\git\ijhcs2016\elsarticle-template.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 616.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 616.
+Package rerunfilecheck Info: File `elsarticle-template.out' has not changed.
+(rerunfilecheck)             Checksum: 948616AD63E611127F07D424FDAEFA27;2246.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 616.
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 357 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 5792 strings out of 493921
- 84931 string characters out of 3144876
- 167576 words of memory out of 3000000
- 9025 multiletter control sequences out of 15000+200000
- 8274 words of font info for 29 fonts, out of 3000000 for 9000
+ 6039 strings out of 493921
+ 89752 string characters out of 3144876
+ 186908 words of memory out of 3000000
+ 9174 multiletter control sequences out of 15000+200000
+ 10021 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,7n,30p,1093b,453s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2} has been referenced but does not exist, 
-replaced by a fixed one
-
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on elsarticle-template.pdf (4 pages, 150388 bytes).
+ 34i,9n,30p,1152b,619s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbx9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+bxti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on elsarticle-template.pdf (33 pages, 435923 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 535 PDF objects out of 1000 (max. 8388607)
+ 114 named destinations out of 1000 (max. 500000)
+ 235 words of extra memory for PDF output out of 10000 (max. 10000000)
 
