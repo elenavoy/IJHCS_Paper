@@ -1,6 +1,8 @@
 \documentclass[review]{elsarticle}
 
 \usepackage{lineno,hyperref}
+\usepackage[section]{placeins}
+\usepackage{multirow}
 \modulolinenumbers[5]
 
 \journal{Journal of \LaTeX\ Templates}
@@ -358,8 +360,43 @@ In summary, while it is not feasible to list all of the possible motives for inf
 
 The next part of the framework deals with the actions associated with enablers of information discovery and curation. A more detailed overview is depicted in Figure~\ref{fig:enablers}; the two main activities (discovery and curation) are decomposed into actions, and each of the actions is supported by a group of features or mechanisms that enable a given aspect of discovery or curation in a Web application.
 
+
+\begin{figure}[htp!]
+	\noindent
+	\centering
+    \includegraphics[width=\linewidth]{figures/framework_enablers.pdf}
+	\caption{Information Discovery and Curation Activities, Actions, and Corresponding Enablers}
+	\label{fig:enablers} 
+\end{figure}
+
 {\subsubsection{Navigation in Discovery: Following Information Scent}
-To discover information, a user needs a way to navigate to it. Navigation in information discovery can be thought of as following an information scent. In general, the information scent models deal with how users identify value, cost, or the access path of information sources based on proximal cues, such as links, icons, categories, etc.~\cite{pirolli1999information}. Common methods of navigation that facilitate information discovery include descriptional, referential, opportunistic, and system-regulated.  We describe these methods below and direct the reader to the top part of  Table~\ref{table:framework} to see an overview of these methods and the enabling mechanisms possible for each method. 
+To discover information, a user needs a way to navigate to it. Navigation in information discovery can be thought of as following an information scent. In general, the information scent models deal with how users identify value, cost, or the access path of information sources based on proximal cues, such as links, icons, categories, etc.~\cite{pirolli1999information}. Common methods of navigation that facilitate information discovery include descriptional, referential, opportunistic, and system-regulated.  We describe these methods below and direct the reader Table~\ref{table:framework_navigation} to see an overview of these methods and the enabling mechanisms possible for each method. 
+
+
+\begin{table}[!htbp]
+\small
+\begin{tabular}{|p{0.25\linewidth}| p{0.35\linewidth}| p{0.35\linewidth}|}
+\hline
+\multirow{2}{\linewidth}{\textbf{Types of navigation features}} & \multicolumn{2}{ p{0.7\linewidth} |}{\textbf{Questions to be posed during the design or evaluation of  discovery and curation tools and sample features}} \\\cline{2-3}
+
+ & Enabling mechanisms & Cognitive support, personalization, and automation \\
+\hline
+\textbf{Descriptional} 			& \textbf{How does the application support descriptional navigation?} & \textbf{How can descriptional navigation mechanisms be enhanced?}\\
+&  Search-based navigation / Integrated search & Personalized results / Guided search\\
+				
+\textbf{Referential}       		& \textbf{How does the application support referential navigation?} & \textbf{How can referential navigation mechanisms be enhanced?}\\
+& Categories / Facets / Filters / Tags / Search by item or resource / Integrated reference & Suggesting categories / Suggesting topics of interest / Suggesting tags / Suggesting similar resources \\
+				    		
+\textbf{Opportunistic}          & \textbf{How does the application support opportunistic navigation?}& \textbf{How can opportunistic navigation mechanisms be enhanced?}\\
+& Opportunistic navigation feature / Integrated opportunistic navigation & Personalized opportunistic navigation \\
+\textbf{System-regulated}       &\textbf{How does the application support system-regulated navigation?} & \textbf{How can system-regulated navigation mechanisms be enhanced?}\\
+& Static direct display / Integrated static display / Featured content / Integrated featured content / News feed / Integrated news feed & Personalized featured content / User activity update notification / Application activity update notification / Artifact update notification \\
+    
+\hline
+\end{tabular}
+\caption{Types of Navigation Features and Related Questions}
+\label{table:framework_navigation} 
+\end{table}
 
 \textbf{Descriptional Navigation:} A navigation is descriptional when the user has a means of describing their information need. It is usually implemented as \feature{search-based navigation} since it allows users to enter a search query and describe what they want to find.  
 % CUTCANDIDATE we mention Stumbleupon below and integration
@@ -375,13 +412,6 @@ Descriptional navigation can also help to rediscover information, but it is not 
 } % end subsection
 
 
-\begin{figure}[ht!]
-	\noindent
-	\centering
-    \includegraphics[width=\linewidth]{figures/framework_enablers.pdf}
-	\caption{Information Discovery and Curation Activities, Actions, and Corresponding Enablers}
-	\label{fig:enablers} 
-\end{figure}
 
 
 \textbf{Referential Navigation:}
@@ -390,79 +420,6 @@ A navigation is referential when the user finds a reference to the term that the
 Referential navigation mechanisms can take many forms. Some common types are \feature{categories}, \feature{facets}, \feature{filters} and \feature{tags}. In some applications, users can search by a given \feature{resource}. For example, YouTube provides a playlist with music related to the currently playing song. Information scent representatives may also reference sources outside of the given system, enabling another type of \feature{integration} of Web applications. 
 %
 Referential navigation can help the user identify their information needs by suggesting terms, topics or categories to use, and therefore, direct the user to relevant resources~\cite{levene2011introduction}. It can also help narrow the results to a specific type of resource so that further discovery is bounded by that type. For example, TripAdvisor helps narrow search results by allowing users to choose among hotels, flights, vacation rentals, restaurants and destinations.
-
-\begin{table*}[!htb]
-\small
-\begin{tabular}{|p{0.25\linewidth}| p{0.35\linewidth}| p{0.35\linewidth}|}
-\hline
-{\textbf{Types of discovery and curation features}}   & \multicolumn{2}{ p{0.7\linewidth} |}{\textbf{Questions to be posed during the design or evaluation of  discovery and curation tools and sample features}} \\
-\hline
-Navigation features & Enabling mechanisms & Cognitive support, personalization, and automation \\
-\hline
-\textbf{Descriptional} 			& \textbf{How does the application support descriptional navigation?} & \textbf{How can descriptional navigation mechanisms be enhanced?}\\
-&  Search-based navigation / Integrated search & Personalized results / Guided search\\
-				
-\textbf{Referential}       		& \textbf{How does the application support referential navigation?} & \textbf{How can referential navigation mechanisms be enhanced?}\\
-& Categories / Facets / Filters / Tags / Search by item or resource / Integrated reference & Suggesting categories / Suggesting topics of interest / Suggesting tags / Suggesting similar resources \\
-				    		
-\textbf{Opportunistic}          & \textbf{How does the application support opportunistic navigation?}& \textbf{How can opportunistic navigation mechanisms be enhanced?}\\
-& Opportunistic navigation feature / Integrated opportunistic navigation & Personalized opportunistic navigation \\
-\textbf{System-regulated}       &\textbf{How does the application support system-regulated navigation?} & \textbf{How can system-regulated navigation mechanisms be enhanced?}\\
-& Static direct display / Integrated static display / Featured content / Integrated featured content / News feed / Integrated news feed & Personalized featured content / User activity update notification / Application activity update notification / Artifact update notification \\
-    
-\hline
-\end{tabular}
-\caption{Types of Information Discovery and Curation Features and Related Questions}
-\label{table:framework_navigation} 
-\end{table*}
-
-\begin{table}[!htb]
-\small
-\begin{tabular}{|p{0.25\linewidth}| p{0.35\linewidth}| p{0.35\linewidth}|}
-\hline
-{\textbf{Types of discovery and curation features}}   & \multicolumn{2}{ p{0.7\linewidth} |}{\textbf{Questions to be posed during the design or evaluation of  discovery and curation tools and sample features}} \\
-\hline
-Exploration features & Enabling mechanisms & Cognitive support, personalization, and automation \\
-\hline
-\textbf{Visual and textual cues of multiple resources} & \textbf{How does the application use visual and textual cues to help identify resources of value?} & \textbf{How can visual and textual cues of multiple resources be enhanced?}\\
-& Visual preview / Textual preview & Personalized visual preview / Personalized textual preview \\
-\textbf{Visual and textual cues of a single resource} & \textbf{How does the application use visual and textual cues to help identify the value of information within a resource?} & \textbf{How can visual and textual cues of a single resource be enhanced?}\\
-& Visual cues / Textual cues & Personalized visual cues / Personalized textual cues \\                
-\textbf{Spatial proximal cues of multiple resources} & \textbf{How does the application use spatial proximal cues to effectively present multiple resources?} & \textbf{How can the use of spatial proximal cues be enhanced to effectively present multiple resources?}\\
-& List / Grid / Gallery / Spatial semantic / Consistency & Personalized arrangement of multiple resources\\
-\textbf{Spatial proximal cues of a single resource} & \textbf{How does the application use spatial proximal cues to effectively present information within a single resource?} & \textbf{How can the use of spatial proximal cues be enhanced to effectively present information within a resources?}\\
-& Spatial semantic / Consistency & Personalized arrangement of information within a resource  \\ 
-     
-\hline
-\end{tabular}
-\caption{Types of Information Discovery and Curation Features and Related Questions}
-\label{table:framework_exploration} 
-\end{table}
-
-\begin{table}[!htb]
-\small
-\begin{tabular}{|p{0.25\linewidth}| p{0.35\linewidth}| p{0.35\linewidth}|}
-\hline
-{\textbf{Types of discovery and curation features}}   & \multicolumn{2}{ p{0.7\linewidth} |}{\textbf{Questions to be posed during the design or evaluation of  discovery and curation tools and sample features}} \\
-
-\hline
-Curation features &Enabling mechanisms & Cognitive support, personalization, and automation \\
-\hline
-\textbf{Management} & \textbf{How does the application support management of information?} & \textbf{How can management of information be enhanced?}\\
-& Public or private collection-based categorization / Public or private tag-based categorization & Suggesting collections / Suggesting tags / Automated classification into collections / Automated tagging \\
-\textbf{Preservation} & \textbf{How does the application support preservation of information?} & \textbf{How can preservation of information be enhanced?}\\
-& Internal preservation of internal resources / Internal preservation of external resources / External preservation of internal resources & History / Suggested preservation  \\
-\textbf{Augmentation} & \textbf{How does the application support augmentation of information?} & \textbf{How can augmentation of information be enhanced?}\\
-& Annotation / Evaluation & Automated augmentation / Suggested augmentation \\ 
-\textbf{Sharing} & \textbf{How does the application support sharing of information?} & \textbf{How can sharing of information be enhanced?}\\
-& Adding resources / Internal sharing / External sharing & Automated sharing / Suggested sharing \\
-\textbf{Channel-picking}  	& \textbf{How does the application support the user in establishing their information preferences?} & \textbf{How can establishment of information preferences be enhanced?}\\
-& User subscription / Site subscription / Artifact subscription & Suggesting users for subscription / Suggesting artifacts for subscription / Automated subscription \\     
-\hline
-\end{tabular}
-\caption{Types of Information Discovery and Curation Features and Related Questions}
-\label{table:framework_curation} 
-\end{table}
 
 \textbf{Opportunistic Navigation:}
 Opportunistic navigation is a method of navigating `randomly' through resources and Web pages. We call this `opportunistic' because it is not truly random, but its serendipitous nature makes users feel like it is. This navigation method is especially useful when the information need is fully undefined.
@@ -477,7 +434,30 @@ One application that utilizes system-regulated navigation is Yelp. As soon as th
 
 
 {\subsubsection{Exploration in Discovery: Examining Information Patches}
-Exploration of resources is another action that facilitates information discovery. Visual and spatial cues, which help representing single or multiple resources, enable this action by allowing users to conveniently examine information patches (please refer to the middle part of Table~\ref{table:framework}). 
+Exploration of resources is another action that facilitates information discovery. Visual and spatial cues, which help representing single or multiple resources, enable this action by allowing users to conveniently examine information patches (please refer to Table~\ref{table:framework_exploration}). 
+
+\begin{table}[!htbp]
+\small
+\begin{tabular}{|p{0.25\linewidth}| p{0.35\linewidth}| p{0.35\linewidth}|}
+\hline
+\multirow{2}{\linewidth}{\textbf{Types of exploration features}}   & \multicolumn{2}{ p{0.7\linewidth} |}{\textbf{Questions to be posed during the design or evaluation of  discovery and curation tools and sample features}} \\\cline{2-3}
+
+ & Enabling mechanisms & Cognitive support, personalization, and automation \\
+\hline
+\textbf{Visual and textual cues of multiple resources} & \textbf{How does the application use visual and textual cues to help identify resources of value?} & \textbf{How can visual and textual cues of multiple resources be enhanced?}\\
+& Visual preview / Textual preview & Personalized visual preview / Personalized textual preview \\
+\textbf{Visual and textual cues of a single resource} & \textbf{How does the application use visual and textual cues to help identify the value of information within a resource?} & \textbf{How can visual and textual cues of a single resource be enhanced?}\\
+& Visual cues / Textual cues & Personalized visual cues / Personalized textual cues \\                
+\textbf{Spatial proximal cues of multiple resources} & \textbf{How does the application use spatial proximal cues to effectively present multiple resources?} & \textbf{How can the use of spatial proximal cues be enhanced to effectively present multiple resources?}\\
+& List / Grid / Gallery / Spatial semantic / Consistency & Personalized arrangement of multiple resources\\
+\textbf{Spatial proximal cues of a single resource} & \textbf{How does the application use spatial proximal cues to effectively present information within a single resource?} & \textbf{How can the use of spatial proximal cues be enhanced to effectively present information within a resources?}\\
+& Spatial semantic / Consistency & Personalized arrangement of information within a resource  \\ 
+     
+\hline
+\end{tabular}
+\caption{Types of Exploration Features and Related Questions}
+\label{table:framework_exploration} 
+\end{table}
 
 \textbf{Visual and textual previews:} Abrams et al.~\cite{abrams1998information} identified link representation as one of the problems with traditional bookmarking. Analogous with browsing through a bookmark manager, identifying relevant information when browsing through links in a Web application can be a challenging task. \feature{Visual previews} and \feature{textual previews} make it easier to evaluate the relevance of resources by providing the user with more information scent. Many social bookmarking systems, such as Scoop.it! and Pinterest, support visual previews of bookmarked pages. Delicious is a social bookmarking application that lacks this type of link representation support, and so it is harder to determine if a link will lead to a relevant resource.
 
@@ -490,7 +470,31 @@ Exploration of resources is another action that facilitates information discover
 Information curation is a common activity across many information discovery applications. By asking questions about application design with regards to information curation designers can find ways to add value to information and enable information discovery over time. 
 %
 Information discovery applications vary from being completely socially curated and populated by users, to those that lack any curation mechanisms. 
-By definition, digital information curation is the notion of managing, preserving, and adding value to collections of information ~\cite{beagrie2008digital,whittaker2011personal}. Thus, curation activity consists of actions such as information management, preservation, information augmentation, sharing, and channel-picking. Refer to the bottom of Table~\ref{table:framework} for this part of the framework.
+By definition, digital information curation is the notion of managing, preserving, and adding value to collections of information ~\cite{beagrie2008digital,whittaker2011personal}. Thus, curation activity consists of actions such as information management, preservation, information augmentation, sharing, and channel-picking. Refer to Table~\ref{table:framework_curation} for this part of the framework.
+
+\begin{table}[!htbp]
+\small
+\begin{tabular}{|p{0.2\linewidth}| p{0.45\linewidth}| p{0.4\linewidth}|}
+\hline
+\multirow{2}{\linewidth}{\textbf{Types of curation features}}   & \multicolumn{2}{ p{0.8\linewidth} |}{\textbf{Questions to be posed during the design or evaluation of  discovery and curation tools and sample features}} \\\cline{2-3}
+
+ & Enabling mechanisms & Cognitive support, personalization, and automation \\
+\hline
+\textbf{Management} & \textbf{How does the application support management of information?} & \textbf{How can management of information be enhanced?}\\
+& Public or private collection-based categorization / Public or private tag-based categorization & Suggesting collections / Suggesting tags / Automated classification into collections / Automated tagging \\
+\textbf{Preservation} & \textbf{How does the application support preservation of information?} & \textbf{How can preservation of information be enhanced?}\\
+& Internal preservation of internal resources / Internal preservation of external resources / External preservation of internal resources & History / Suggested preservation  \\
+\textbf{Augmentation} & \textbf{How does the application support augmentation of information?} & \textbf{How can augmentation of information be enhanced?}\\
+& Annotation / Evaluation & Automated augmentation / Suggested augmentation \\ 
+\textbf{Sharing} & \textbf{How does the application support sharing of information?} & \textbf{How can sharing of information be enhanced?}\\
+& Adding resources / Internal sharing / External sharing & Automated sharing / Suggested sharing \\
+\textbf{Channel-picking}  	& \textbf{How does the application support the user in establishing their information preferences?} & \textbf{How can establishment of information preferences be enhanced?}\\
+& User subscription / Site subscription / Artifact subscription & Suggesting users for subscription / Suggesting artifacts for subscription / Automated subscription \\     
+\hline
+\end{tabular}
+\caption{Types of Curation Features and Related Questions}
+\label{table:framework_curation} 
+\end{table}
 
 % Elena being consistent with formatting above ...
 \textbf{
@@ -546,7 +550,7 @@ The information discovery and curation enablers just presented are design elemen
 Strategies for improvement include providing additional cognitive support for a given operation, personalizing the user experience, and automating an operation. Not all of the strategies are feasible for every single operation, and some operations can be supported in multiple ways. The following  outline some of the possibilities for advancing information discovery and curation features. 
 
 {\textbf{Enhancing Navigation:}
-There are two common methods of enhancing information discovery when search-based navigation is used (see Table~\ref{table:framework}). The first method entails returning personalized results when the user enters a search query. \feature{Personalization} can be accomplished using a variety of techniques, including predefined user preferences, social interactions, context, browsing history, etc. The second method is to \feature{suggest search terms} to make it easier for the user to formulate their information need. For example, Yelp suggests search terms as the user enters their query.
+There are two common methods of enhancing information discovery when search-based navigation is used (see Table~\ref{table:framework_navigation}). The first method entails returning personalized results when the user enters a search query. \feature{Personalization} can be accomplished using a variety of techniques, including predefined user preferences, social interactions, context, browsing history, etc. The second method is to \feature{suggest search terms} to make it easier for the user to formulate their information need. For example, Yelp suggests search terms as the user enters their query.
 
 To further support referential navigation, applications can \feature{personalize} reference suggestions, such as \feature{categories}, \feature{tags}, and \feature{topics} of interest. They can also suggest relevant resources based on the one that the user already selected. As an example, after a user clicks a `pin', Pinterest showcases other similar `pins'.
 
@@ -566,7 +570,7 @@ Finally, to make better use of subscribed content and to reduce human efforts wh
 
 
 {\textbf{Enhancing Curation:}
-Information management can be improved if the system helps the user make decisions about information categorization or tagging (see Table~\ref{table:framework}). Alternatively, information can be \feature{categorized} or \feature{tagged automatically}. For example, when the user bookmarks a restaurant on Yelp, it is automatically categorized. The user can filter bookmarks by category whenever they go into the embedded bookmark manager. 
+Information management can be improved if the system helps the user make decisions about information categorization or tagging (see Table~\ref{table:framework_curation}). Alternatively, information can be \feature{categorized} or \feature{tagged automatically}. For example, when the user bookmarks a restaurant on Yelp, it is automatically categorized. The user can filter bookmarks by category whenever they go into the embedded bookmark manager. 
 
 Preservation operations can also be automated. An example of the most common automatic preservation mechanism is \feature{history}. Applications such as YouTube and Google Maps preserve users' browsing history so that they can review it later. Additionally, preservation mechanisms can be \feature{suggested} to the user.
 % 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.24)  25 FEB 2016 15:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.24)  26 FEB 2016 18:35
 entering extended mode
 **elsarticle-template.tex
 (C:\Users\Elena\git\ijhcs2016\elsarticle-template.tex
@@ -238,38 +238,44 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip47
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\placeins\placeins.sty"
+Package: placeins 2005/04/18  v 2.2
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen118
+)
 (C:\Users\Elena\git\ijhcs2016\elsarticle-template.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
 (C:\Users\Elena\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
-\scratchdimen=\dimen118
+\scratchdimen=\dimen119
 \scratchbox=\box31
 \nofMPsegments=\count113
 \nofMParguments=\count114
 \everyMPshowfont=\toks18
 \MPscratchCnt=\count115
-\MPscratchDim=\dimen119
+\MPscratchDim=\dimen120
 \MPnumerator=\count116
 \makeMPintoPDFobject=\count117
 \everyMPtoPDFconversion=\toks19
 )
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 43.
+Package hyperref Info: Link coloring OFF on input line 45.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -278,310 +284,250 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count118
 )
-LaTeX Info: Redefining \ref on input line 43.
-LaTeX Info: Redefining \pageref on input line 43.
-LaTeX Info: Redefining \nameref on input line 43.
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
 
 (C:\Users\Elena\git\ijhcs2016\elsarticle-template.out)
 (C:\Users\Elena\git\ijhcs2016\elsarticle-template.out)
 \@outlinefile=\write4
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 75.
+(Font)              <8> on input line 77.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 75.
+(Font)              <6> on input line 77.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 75.
+(Font)              <5> on input line 77.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 75.
+(Font)              <7> on input line 77.
  [1
 
 
 {C:/Users/Elena/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-Overfull \hbox (0.37564pt too wide) in paragraph at lines 92--93
+Overfull \hbox (0.37564pt too wide) in paragraph at lines 94--95
 []\OT1/cmr/m/n/10 Given the com-plex-ity of Web-based in-for-ma-tion dis-cov-er
 y and cu-ra-tion tasks,
  []
 
 [3] [4] [5] [6] [7] [8]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 216.
+(Font)              <9> on input line 218.
  [9] [10]
 <figures/framework_overview.pdf, id=253, 343.2825pt x 333.245pt>
 File: figures/framework_overview.pdf Graphic file (type pdf)
 
 <use figures/framework_overview.pdf>
-Package pdftex.def Info: figures/framework_overview.pdf used on input line 301.
+Package pdftex.def Info: figures/framework_overview.pdf used on input line 303.
 
 (pdftex.def)             Requested size: 345.0pt x 334.91202pt.
  [11] [12 <C:/Users/Elena/git/ijhcs2016/figures/framework_overview.pdf>]
-Overfull \hbox (9.86165pt too wide) in paragraph at lines 319--324
+Overfull \hbox (9.86165pt too wide) in paragraph at lines 321--326
 []\OT1/cmr/m/n/10 The na-ture of an in-for-ma-tion need pre-de-ter-mines whethe
 r dis-cov-ery is serendip-
  []
 
-[13] [14]
-
-LaTeX Warning: Reference `table:framework' on page 15 undefined on input line 3
-62.
-
-[15] <figures/framework_enablers.pdf, id=320, 448.67625pt x 558.085pt>
+[13] [14] <figures/framework_enablers.pdf, id=312, 448.67625pt x 558.085pt>
 File: figures/framework_enablers.pdf Graphic file (type pdf)
 
 <use figures/framework_enablers.pdf>
-Package pdftex.def Info: figures/framework_enablers.pdf used on input line 381.
+Package pdftex.def Info: figures/framework_enablers.pdf used on input line 367.
 
 (pdftex.def)             Requested size: 345.0pt x 429.1392pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+Overfull \vbox (16.50002pt too high) detected at line 380
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
 []\OT1/cmr/bx/n/9 How can de-scrip-tional
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 406--407
+Underfull \hbox (badness 1215) in paragraph at lines 388--389
 \OT1/cmr/m/n/9 gest-ing top-ics of in-ter-est /
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 408--408
+Underfull \hbox (badness 3312) in paragraph at lines 390--390
 []\OT1/cmr/bx/n/9 How does the ap-pli-ca-
  []
 
 
-Underfull \hbox (badness 7012) in paragraph at lines 408--409
+Underfull \hbox (badness 7012) in paragraph at lines 390--391
 []\OT1/cmr/bx/n/9 How can op-por-tunis-tic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 []\OT1/cmr/m/n/9 Personalized op-por-tunis-tic
  []
 
 
-Overfull \hbox (18.75421pt too wide) in paragraph at lines 396--415
+Overfull \hbox (18.75421pt too wide) in paragraph at lines 378--397
 [][] 
  []
 
+[15] [16 <C:/Users/Elena/git/ijhcs2016/figures/framework_enablers.pdf>]
+[17] [18]
+Overfull \vbox (16.50002pt too high) detected at line 443
+ []
 
-Underfull \hbox (badness 4378) in paragraph at lines 427--427
+
+Underfull \hbox (badness 4378) in paragraph at lines 447--447
 \OT1/cmr/bx/n/9 cues of mul-ti-ple
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 427--427
+Underfull \hbox (badness 3312) in paragraph at lines 447--447
 []\OT1/cmr/bx/n/9 How does the ap-pli-ca-
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 429--429
+Underfull \hbox (badness 3312) in paragraph at lines 449--449
 []\OT1/cmr/bx/n/9 How does the ap-pli-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--431
+Underfull \hbox (badness 10000) in paragraph at lines 451--451
 []\OT1/cmr/bx/n/9 Spatial prox-i-mal
  []
 
 
-Underfull \hbox (badness 4378) in paragraph at lines 431--431
+Underfull \hbox (badness 4378) in paragraph at lines 451--451
 \OT1/cmr/bx/n/9 cues of mul-ti-ple
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--432
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
 []\OT1/cmr/bx/n/9 How can the use of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--432
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
 \OT1/cmr/bx/n/9 spa-tial prox-i-mal cues
  []
 
 
-Underfull \hbox (badness 6961) in paragraph at lines 431--432
+Underfull \hbox (badness 6961) in paragraph at lines 451--452
 \OT1/cmr/bx/n/9 be en-hanced to ef-fec-
  []
 
 
-Underfull \hbox (badness 8151) in paragraph at lines 431--432
+Underfull \hbox (badness 8151) in paragraph at lines 451--452
 \OT1/cmr/bx/n/9 tively present mul-ti-ple
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--433
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 []\OT1/cmr/bx/n/9 Spatial prox-i-mal
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 433--433
+Underfull \hbox (badness 2635) in paragraph at lines 453--453
 \OT1/cmr/bx/n/9 cues of a sin-gle
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
 []\OT1/cmr/bx/n/9 How can the use of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
 \OT1/cmr/bx/n/9 spa-tial prox-i-mal cues
  []
 
 
-Underfull \hbox (badness 6961) in paragraph at lines 433--434
+Underfull \hbox (badness 6961) in paragraph at lines 453--454
 \OT1/cmr/bx/n/9 be en-hanced to ef-fec-
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 434--434
+Underfull \hbox (badness 2744) in paragraph at lines 454--454
 []\OT1/cmr/m/n/9 Spatial se-man-tic / Con-sis-
  []
 
 
-Overfull \hbox (18.75421pt too wide) in paragraph at lines 421--438
+Overfull \hbox (18.75421pt too wide) in paragraph at lines 441--458
 [][] 
  []
 
-
-Underfull \hbox (badness 2285) in paragraph at lines 451--451
-\OT1/cmr/bx/n/9 sup-port man-age-ment of
+[19] [20]
+Overfull \vbox (16.50002pt too high) detected at line 479
  []
 
 
-Underfull \hbox (badness 4595) in paragraph at lines 452--453
-\OT1/cmr/m/n/9 gest-ing tags / Au-to-mated
+Underfull \hbox (badness 3568) in paragraph at lines 481--482
+[]\OT1/cmr/m/n/9 Cognitive sup-port, per-son-al-iza-
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 453--453
-[]\OT1/cmr/bx/n/9 How does the ap-pli-ca-
+Underfull \hbox (badness 10000) in paragraph at lines 491--491
+[]\OT1/cmr/bx/n/9 Channel-
  []
 
 
-Underfull \hbox (badness 1831) in paragraph at lines 454--454
-[]\OT1/cmr/m/n/9 Internal preser-va-tion of in-
- []
-
-
-Underfull \hbox (badness 3199) in paragraph at lines 454--454
-\OT1/cmr/m/n/9 ter-nal re-sources / In-ter-nal
- []
-
-
-Underfull \hbox (badness 1496) in paragraph at lines 454--454
-\OT1/cmr/m/n/9 preser-va-tion of ex-ter-nal re-
- []
-
-
-Underfull \hbox (badness 2680) in paragraph at lines 456--457
-[]\OT1/cmr/m/n/9 Automated aug-men-ta-tion /
- []
-
-
-Underfull \hbox (badness 2799) in paragraph at lines 458--459
-[]\OT1/cmr/m/n/9 Automated shar-ing / Sug-
- []
-
-
-Underfull \hbox (badness 4792) in paragraph at lines 459--460
-[]\OT1/cmr/bx/n/9 How can es-tab-lish-ment
- []
-
-
-Underfull \hbox (badness 3078) in paragraph at lines 460--461
-\OT1/cmr/m/n/9 tion / Sug-gest-ing ar-ti-facts
- []
-
-
-Overfull \hbox (18.75421pt too wide) in paragraph at lines 444--463
+Overfull \hbox (53.24579pt too wide) in paragraph at lines 477--495
 [][] 
  []
 
-
-LaTeX Warning: Float too large for page by 96.7109pt on input line 465.
-
-[16] [17 <C:/Users/Elena/git/ijhcs2016/figures/framework_enablers.pdf>]
-
-LaTeX Warning: Reference `table:framework' on page 18 undefined on input line 4
-80.
-
-[18]
-
-LaTeX Warning: Reference `table:framework' on page 19 undefined on input line 4
-93.
-
-[19] [20] [21]
-
-LaTeX Warning: Reference `table:framework' on page 22 undefined on input line 5
-49.
-
-
-Overfull \hbox (7.69446pt too wide) in paragraph at lines 553--554
+[21] [22] [23] [24]
+Overfull \hbox (7.69446pt too wide) in paragraph at lines 557--558
 []\OT1/cmr/m/n/10 For op-por-tunis-tic nav-i-ga-tion, Web tools some-times al-l
 ow users to \OT1/cmtt/m/n/10 personalize
  []
 
-[22]
-
-LaTeX Warning: Reference `table:framework' on page 23 undefined on input line 5
-69.
-
-[23] [24]
-Overfull \hbox (5.87897pt too wide) in paragraph at lines 592--593
+[25] [26] [27]
+Overfull \hbox (5.87897pt too wide) in paragraph at lines 596--597
 \OT1/cmr/m/n/10 system-regulated mech-a-nisms. Al-though an ex-plicit \OT1/cmtt
 /m/n/10 opportunistic navigation
  []
 
 
-Overfull \hbox (7.32161pt too wide) in paragraph at lines 602--603
+Overfull \hbox (7.32161pt too wide) in paragraph at lines 606--607
 \OT1/cmr/m/n/10 and \OT1/cmtt/m/n/10 internal preservation of internal and exte
 rnal resources\OT1/cmr/m/n/10 . All user
  []
 
 
-Overfull \hbox (3.0184pt too wide) in paragraph at lines 602--603
+Overfull \hbox (3.0184pt too wide) in paragraph at lines 606--607
 \OT1/cmr/m/n/10 in-for-ma-tion col-lect-ing ac-tions are \OT1/cmtt/m/n/10 autom
 atically \OT1/cmr/m/n/10 pre-served and dis-played. Users
  []
 
 
-Overfull \hbox (1.0456pt too wide) in paragraph at lines 602--603
+Overfull \hbox (1.0456pt too wide) in paragraph at lines 606--607
 \OT1/cmtt/m/n/10 subscribing \OT1/cmr/m/n/10 to users or in-di-vid-ual `pin-boa
 rds'. The sys-tem also \OT1/cmtt/m/n/10 automatically
  []
 
-[25] [26] [27] (C:\Users\Elena\git\ijhcs2016\elsarticle-template.bbl [28]
-[29]
+[28] [29] [30] (C:\Users\Elena\git\ijhcs2016\elsarticle-template.bbl [31]
+[32]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ” in font cmr10!
- [30] [31])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 640.
- [32] [33] [34] [35]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 640.
-
-(C:\Users\Elena\git\ijhcs2016\elsarticle-template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 640.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 640.
+ [33] [34])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 644.
+ [35]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 644.
+ (C:\Users\Elena\git\ijhcs2016\elsarticle-template.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 644.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 644.
 Package rerunfilecheck Info: File `elsarticle-template.out' has not changed.
 (rerunfilecheck)             Checksum: 948616AD63E611127F07D424FDAEFA27;2246.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 640.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 644.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 357 ({)
+### simple group (level 1) entered at line 359 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6046 strings out of 493921
- 89863 string characters out of 3144876
- 189100 words of memory out of 3000000
- 9177 multiletter control sequences out of 15000+200000
+ 6073 strings out of 493921
+ 90473 string characters out of 3144876
+ 176350 words of memory out of 3000000
+ 9196 multiletter control sequences out of 15000+200000
  10021 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,9n,30p,1152b,619s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,10n,30p,1152b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmbx9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
@@ -599,9 +545,9 @@ les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on elsarticle-template.pdf (35 pages, 438104 bytes).
+Output written on elsarticle-template.pdf (35 pages, 438515 bytes).
 PDF statistics:
- 541 PDF objects out of 1000 (max. 8388607)
+ 546 PDF objects out of 1000 (max. 8388607)
  118 named destinations out of 1000 (max. 500000)
  235 words of extra memory for PDF output out of 10000 (max. 10000000)
 
