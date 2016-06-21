@@ -311,7 +311,7 @@ Our framework considers human motives and relates information discovery and cura
 
 There are a wide variety of user motives behind information discovery and curation, and certain aspects of these motives can significantly impact the design of an application. Understanding a user's motives can help form a conceptual model of a needed Web application and its features. The following generalizations of motives and their properties can help define conceptual models and identify primary information discovery and curation use cases.  
 
-{\subsubsection{Closing a Knowledge Gap}
+{\subsubsection{Motive: Closing a Knowledge Gap}
 The primary motive for information discovery is usually to close a knowledge gap that occurs when the user tries to accomplish a task but lacks information to do so. 
 % CUTCANDIDATE
 %This motive can be of various type depending on the nature of the information need and other aspects of the given motive.        
@@ -334,16 +334,16 @@ The motive behind information rediscovery involves finding previously discovered
 Some Web pages and resources can be rediscovered using navigation, while others need to be previously preserved (bookmarked) to afford rediscovery. Rediscovery is one of the many ways in which information discovery and curation interweave. 
 }
 
-{\subsubsection{Supporting Future Use and Reaccess}
+{\subsubsection{Motive: Supporting Future Use and Reaccess}
 The main motive behind information curation is to make it possible to retrieve and use information. In order to facilitate easy information retrieval, many Web applications employ various forms of bookmarking systems. Traditionally, bookmarks must be manually organized into folders, but this method of organization is considered inefficient because folders with bookmarks become easily cluttered~\cite{abrams1998information}. Therefore, in order to efficiently support information rediscovery, Web tools need to provide mechanisms for information preservation along with information management.
 }
 
-{\subsubsection{Improving Collections}
+{\subsubsection{Motive: Improving Collections}
 People gather information to improve existing collections~\cite{lindley2012s}. Although some deeper motives may include self reflection or the possibility of future use, collecting information is a motive in itself. Information gathering may be stretched over a period of time~\cite{kellar2006goal}, resulting in repeated page visitation. Although information gathering comprises only 13.4\% of Web usage, it contributes to many goal-supporting activities, such as decision making and planning~\cite{kellar2006goal}.
 
 }
 
-{\subsubsection{Facilitating Communication}
+{\subsubsection{Motive: Facilitating Communication}
 As part of his information behavior model, Wilson identified communication of information as an outcome of information seeking. Communication can also be thought of as a motive for information discovery and curation. To support communication of information, Web tools provide mechanisms that allow various users to share information among themselves. 
 %
 \textit{Social bookmarking} is one popular way to preserve and share information across communities and to communicate with other users~\cite{estelles2010social}. One of the first visions of social bookmarking was associated with Web blogging. Oravec~\cite{oravec2002bookmarking} suggests that Web blogs help users annotate or bookmark important information and build a ``map'' of the Internet. The evolution of social bookmarking has led to advanced techniques for collaborative information discovery and curation. 
@@ -369,7 +369,7 @@ The next part of the framework deals with the actions associated with enablers o
 	\label{fig:enablers} 
 \end{figure}
 
-{\subsubsection{Navigation in Discovery: Following Information Scent}
+{\subsubsection{Action: Navigation in Discovery - Following Information Scent}
 To discover information, a user needs a way to navigate to it. Navigation in information discovery can be thought of as following an information scent. In general, the information scent models deal with how users identify value, cost, or the access path of information sources based on proximal cues, such as links, icons, categories, etc.~\cite{pirolli1999information}. Common methods of navigation that facilitate information discovery include descriptional, referential, opportunistic, and system-regulated.  We describe these methods below and direct the reader Table~\ref{table:framework_navigation} to see an overview of these methods and the enabling mechanisms possible for each method. 
 
 
@@ -433,7 +433,7 @@ Web applications often display information without the user's active participati
 One application that utilizes system-regulated navigation is Yelp. As soon as the user enters the site, this tool displays featured restaurants as well as the user's recent activities. As with any other navigation method, system-regulated navigation can ensure cross-application \feature{integration} by displaying content from other Web applications. 
 
 
-{\subsubsection{Exploration in Discovery: Examining Information Patches}
+{\subsubsection{Action: Exploration in Discovery - Examining Information Patches}
 Exploration of resources is another action that facilitates information discovery. Visual and spatial cues, which help representing single or multiple resources, enable this action by allowing users to conveniently examine information patches (please refer to Table~\ref{table:framework_exploration}). 
 
 \begin{table}[!htbp]
@@ -466,7 +466,7 @@ Exploration of resources is another action that facilitates information discover
 \textbf{Spatial visualizations:} Similar to link representation, spatial visualization of numerous links is another problem that occurs when browsing through diverse content~\cite{abrams1998information}. Therefore, a semantic to the \feature{spatial arrangement} of information (single and multiple resources) is of major importance. Information discovery applications often employ sophisticated ways of spatially arranging resources to make it easier to browse through large amounts of information. Common ways of arranging multiple resources include \feature{lis}t, \feature{grid}, and \feature{gallery} layouts. Additionally, \feature{consistency} in the way multiple and single resources are represented helps form a conceptual model of how the application can be used and provides some degree of predictability~\cite{norman2002design}.
 } % end section
 
-{\subsection{Curation}
+{\subsection{Activity: Curation}
 Information curation is a common activity across many information discovery applications. By asking questions about application design with regards to information curation designers can find ways to add value to information and enable information discovery over time. 
 %
 Information discovery applications vary from being completely socially curated and populated by users, to those that lack any curation mechanisms. 
@@ -497,13 +497,12 @@ By definition, digital information curation is the notion of managing, preservin
 \end{table}
 
 % Elena being consistent with formatting above ...
-\textbf{
-Information management} is one of the key elements of information curation ~\cite{beagrie2008digital,whittaker2011personal}. These mechanisms are prevalent in applications that have a lot of information that is hard to categorize automatically or can mean something different for each user. In the context of Web information management, \feature{tag} and \feature{collection-based} information categorization play major roles.
+\textbf{Action: Information management} is one of the key elements of information curation ~\cite{beagrie2008digital,whittaker2011personal}. These mechanisms are prevalent in applications that have a lot of information that is hard to categorize automatically or can mean something different for each user. In the context of Web information management, \feature{tag} and \feature{collection-based} information categorization play major roles.
 %
 Resource categorization also helps establish relationships between various resources ~\cite{beagrie2008digital,whittaker2011personal}. Tagging can aid rediscovery and discovery in a socially curated space, as well as add more value to resources~\cite{gruber2007ontology}. Sample applications that facilitate information management are Pinterest, a tool that supports tagging and collection-based categorization, and Tumblr, a tool that supports tagging.
 %} % end subsubsection
 
-\textbf{Information preservation} is a common Web task usually performed with the intent of revisiting information~\cite{abrams1998information,whittaker2011personal}. However, information gathering is sometimes performed with just the goal of collecting information~\cite{lindley2012s}. 
+\textbf{Action: Information preservation} is a common Web task usually performed with the intent of revisiting information~\cite{abrams1998information,whittaker2011personal}. However, information gathering is sometimes performed with just the goal of collecting information~\cite{lindley2012s}. 
 %
 Bookmarking is a traditional way of preserving information. \feature{Internal preservation of internal resources} means bookmarking resources can be reaccessed within the same application. Such bookmarking facilitates information curation within the system. \feature{Internal preservation of external resources} signifies bookmarking other Web pages within an application. \feature{External preservation} means bookmarking resources so that they are available through other bookmarking systems. An application must facilitate integration with other applications to enable external preservation~\cite{abrams1998information}.
 %
@@ -512,7 +511,7 @@ Bookmarking is a traditional way of preserving information. \feature{Internal pr
 % CUTCANDIDATE 
 %} % end subsubsection
 
-\textbf{Augmentation:}
+\textbf{Action: Augmentation:}
 One of the most important elements of digital curation is augmentation: adding value to information ~\cite{beagrie2008digital,whittaker2011personal}. It is often performed within social bookmarking systems, and many Web applications allow users to add value to the resources they curate. 
 %
 One way to augment information is by \feature{annotating} it with comments and descriptions. Annotations are metadata attached to a resource that make it easier to search for and interpret information. For example, Yelp and TripAdvisor largely rely on reviews written by their users. 
@@ -520,7 +519,7 @@ One way to augment information is by \feature{annotating} it with comments and d
 \feature{Evaluation} methods can have various forms. They usually take place in socially curated information systems. However, evaluation can also contribute to personal reflection and information preservation. Many applications allow users to evaluate resources by rating them or recording other forms of approval or disapproval, such as "I like this" and "I dislike this" buttons on YouTube.
 %} % end subsubsection
 
-\textbf{Sharing}
+\textbf{Action: Sharing}
 information is key to empowering social information curation ~\cite{beagrie2008digital}. Therefore, the main components that facilitate sharing are the adding of resources, and external and internal information sharing.
 %
 \feature{Adding resources} not only facilitates global Web information curation, but it also scales the information available through the system, providing more opportunities for information discovery. Resources can be created by users themselves, taken from some other sources online, or both. For example, YouTube allows users to upload their own videos, whereas Pinterest permits adding images from other sites in addition to users' personal images. 
@@ -529,7 +528,7 @@ Sharing resources through different media and resharing them within the Web appl
 %} % end subsubsection
 
 
-\textbf{Channel-picking} is an action of selecting information sources. A common enabler for this action is subscriptions that help users follow the news~\cite{java2007feeds}. To support channel-based discovery, an application must provide a subscription mechanism. For example, Rotten Tomatoes allows \feature{subscriptions} to \feature{newsletters}, but it does not allow subscriptions to movie critics that would be allowed with a user-based subscription mechanism such as the one in Pinterest. 
+\textbf{Action: Channel-picking} is an action of selecting information sources. A common enabler for this action is subscriptions that help users follow the news~\cite{java2007feeds}. To support channel-based discovery, an application must provide a subscription mechanism. For example, Rotten Tomatoes allows \feature{subscriptions} to \feature{newsletters}, but it does not allow subscriptions to movie critics that would be allowed with a user-based subscription mechanism such as the one in Pinterest. 
 %
 In some applications, the content is updated and curated by users, and users can \feature{subscribe} to other \feature{users} or \feature{artifacts}. Similar to site subscriptions, user and artifact subscriptions are subscriptions to activity updates. These subscription mechanisms help with networking and provide awareness about other users' activities~\cite{millen2005social}. Such subscriptions also help filter new content delivered to the user. 
 %} % end subsubsection
@@ -542,7 +541,7 @@ In summary, information discovery and curation tools can have different implemen
 
 %} % end section
 
-{\subsection{Enhancing the Discovery and Curation Experience}
+{\subsection{Cognitive Support: Enhancing the Discovery and Curation Experience}
 
 
 The information discovery and curation enablers just presented are design elements that afford various operations. For example, the search feature enables typing in a query and searching for information. These operations can be further supported by another set of design elements that introduce cognitive support, personalization, and automation. The primary goal of this part of the framework (see right column of Table 2) is to highlight opportunities for improvement over various information discovery and curation enabling mechanisms.
