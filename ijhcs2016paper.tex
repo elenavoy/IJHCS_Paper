@@ -292,7 +292,7 @@ In our framework, we build on existing models and frameworks of information disc
 
 The second part of the framework defines the \textit{actions} that comprise discovery and curation activities, and the design factors that enable them. Some examples of actions include managing and preserving information. To support these actions, a Web-based application must provide corresponding mechanisms, such as bookmarking and tagging capabilities.
 
-Actions can be further decomposed into \textit{operations} performed using mechanisms that enable the actions. For example, the information preservation (action) can be enabled using a bookmaking feature (enabling mechanism) so that users can bookmark information using the feature (operation). The third part of the framework deals with improving operations for information discovery and curation.  
+Actions can be further decomposed into \textit{operations} performed using mechanisms that enable the actions. For example, the information preservation (action) can be enabled using a bookmaking feature (enabling mechanism) so that users can bookmark information using the feature (operation). The third part of the framework deals with improving operations for information discovery and curation using cognitive support mechanisms. Cognitive support mechanisms differ form enablers in that they improve operations that could still take place without that support. They can be thought of improvements over existing enablers and can take a form of automation, personalization, etc.
 
 Our framework considers human motives and relates information discovery and curation actions with corresponding enabling mechanisms. We relate operations that arise from actions with corresponding cognitive support, personalization, and automation. One of our very early versions of the framework~\cite{voyloshnikova2014}, which has a different structure and an incomplete set of design features, also lacks the distinction between operations and actions, and the support they require. Similar terminology is used in Activity Theory~\cite{kuutti1996activity} to describe human practices. Figure~\ref{fig:framework_overview} gives a high-level overview of the framework and illustrates how the different components of the framework are connected.
 
@@ -352,7 +352,7 @@ As part of his information behavior model, Wilson identified communication of in
 % CUTCANDIDATE
 %{\subsubsection{Summary}
 % CUTCANDIDATE
-In summary, while it is not feasible to list all of the possible motives for information discovery and curation, this section outlined some of the key motives that can aid in developing use cases and formalizing conceptual models for Web applications. These motives also make it easier to showcase how mechanisms for discovery and curation (presented in the next section) complement each other.
+In summary, while it is not feasible to list all of the possible motives for information discovery and curation, this section outlined some of the key motives that can aid in developing use cases and formalizing conceptual models for Web applications. These motives also make it easier to showcase how mechanisms for discovery and curation activities (presented in the next section) complement each other.
 } 
 }
 
@@ -369,7 +369,7 @@ The next part of the framework deals with the actions associated with enablers o
 	\label{fig:enablers} 
 \end{figure}
 
-{\subsubsection{Action: Navigation in Discovery - Following Information Scent}
+{\subsubsection{Action: Navigation in Discovery (Following Information Scent)}
 To discover information, a user needs a way to navigate to it. Navigation in information discovery can be thought of as following an information scent. In general, the information scent models deal with how users identify value, cost, or the access path of information sources based on proximal cues, such as links, icons, categories, etc.~\cite{pirolli1999information}. Common methods of navigation that facilitate information discovery include descriptional, referential, opportunistic, and system-regulated.  We describe these methods below and direct the reader Table~\ref{table:framework_navigation} to see an overview of these methods and the enabling mechanisms possible for each method. 
 
 
@@ -398,7 +398,7 @@ To discover information, a user needs a way to navigate to it. Navigation in inf
 \label{table:framework_navigation} 
 \end{table}
 
-\textbf{Descriptional Navigation:} A navigation is descriptional when the user has a means of describing their information need. It is usually implemented as \feature{search-based navigation} since it allows users to enter a search query and describe what they want to find.  
+\textbf{Descriptional Navigation (Type of Navigation Action):} A navigation is descriptional when the user has a means of describing their information need. It is usually implemented as \feature{search-based navigation} since it allows users to enter a search query and describe what they want to find.  
 % CUTCANDIDATE we mention Stumbleupon below and integration
 %Some applications use other methods of navigation, such as StumbleUpon and some Web applications are \feature{integrated} with others, enabling users to search multiple Websites at once. 
 % CUTCANDIDATE 
@@ -414,26 +414,26 @@ Descriptional navigation can also help to rediscover information, but it is not 
 
 
 
-\textbf{Referential Navigation:}
+\textbf{Referential Navigation (Type of Navigation Action):}
 A navigation is referential when the user finds a reference to the term that they are looking for, such as a link or icon. This reference represents an information scent. The underlying assumption of this method of navigation is that the user can recognize the needed information or a reference to it as they see it~\cite{waterworth1991model}. 
 
 Referential navigation mechanisms can take many forms. Some common types are \feature{categories}, \feature{facets}, \feature{filters} and \feature{tags}. In some applications, users can search by a given \feature{resource}. For example, YouTube provides a playlist with music related to the currently playing song. Information scent representatives may also reference sources outside of the given system, enabling another type of \feature{integration} of Web applications. 
 %
 Referential navigation can help the user identify their information needs by suggesting terms, topics or categories to use, and therefore, direct the user to relevant resources~\cite{levene2011introduction}. It can also help narrow the results to a specific type of resource so that further discovery is bounded by that type. For example, TripAdvisor helps narrow search results by allowing users to choose among hotels, flights, vacation rentals, restaurants and destinations.
 
-\textbf{Opportunistic Navigation:}
+\textbf{Opportunistic Navigation (Type of Navigation Action):}
 Opportunistic navigation is a method of navigating `randomly' through resources and Web pages. We call this `opportunistic' because it is not truly random, but its serendipitous nature makes users feel like it is. This navigation method is especially useful when the information need is fully undefined.
 %
 Many applications support opportunistic jumping from one resource to another. For example, StumbleUpon makes it possible to explore the Web in general---other Websites and Web applications, allows for \feature{integrated} navigation---whereas Wikipedia provides opportunistic access to its own articles. 
 
 
-\textbf{System-regulated Navigation:}
+\textbf{System-regulated Navigation (Type of Navigation Action):}
 Web applications often display information without the user's active participation. This information can be a \feature{news feed}, \feature{featured} deals or articles or other types of content. We refer to this type of navigation as system-regulated because it occurs when the application brings the content to the user instead of the user applying any effort to find content. It differs from opportunistic navigation because the the user cannot choose when to observe new information; instead, all updates are regulated by the application. 
 %
 One application that utilizes system-regulated navigation is Yelp. As soon as the user enters the site, this tool displays featured restaurants as well as the user's recent activities. As with any other navigation method, system-regulated navigation can ensure cross-application \feature{integration} by displaying content from other Web applications. 
 
 
-{\subsubsection{Action: Exploration in Discovery - Examining Information Patches}
+{\subsubsection{Action: Exploration in Discovery (Examining Information Patches)}
 Exploration of resources is another action that facilitates information discovery. Visual and spatial cues, which help representing single or multiple resources, enable this action by allowing users to conveniently examine information patches (please refer to Table~\ref{table:framework_exploration}). 
 
 \begin{table}[!htbp]
@@ -459,11 +459,11 @@ Exploration of resources is another action that facilitates information discover
 \label{table:framework_exploration} 
 \end{table}
 
-\textbf{Visual and textual previews:} Abrams et al.~\cite{abrams1998information} identified link representation as one of the problems with traditional bookmarking. Analogous with browsing through a bookmark manager, identifying relevant information when browsing through links in a Web application can be a challenging task. \feature{Visual previews} and \feature{textual previews} make it easier to evaluate the relevance of resources by providing the user with more information scent. Many social bookmarking systems, such as Scoop.it! and Pinterest, support visual previews of bookmarked pages. Delicious is a social bookmarking application that lacks this type of link representation support, and so it is harder to determine if a link will lead to a relevant resource.
+\textbf{Visual and textual previews (exploration enablers):} Abrams et al.~\cite{abrams1998information} identified link representation as one of the problems with traditional bookmarking. Analogous with browsing through a bookmark manager, identifying relevant information when browsing through links in a Web application can be a challenging task. \feature{Visual previews} and \feature{textual previews} make it easier to evaluate the relevance of resources by providing the user with more information scent. Many social bookmarking systems, such as Scoop.it! and Pinterest, support visual previews of bookmarked pages. Delicious is a social bookmarking application that lacks this type of link representation support, and so it is harder to determine if a link will lead to a relevant resource.
 
-\textbf{Visual and textual cues:} \feature{Visual and textual information cues} are also important for a single resource exploration. Not only do they help navigation within the resource or Web page, but they can also contribute to the learning experience. For example, if the user would like to know what something looks like, they can learn it from the representation in question.  
+\textbf{Visual and textual cues (exploration enablers):} \feature{Visual and textual information cues} are also important for a single resource exploration. Not only do they help navigation within the resource or Web page, but they can also contribute to the learning experience. For example, if the user would like to know what something looks like, they can learn it from the representation in question.  
 
-\textbf{Spatial visualizations:} Similar to link representation, spatial visualization of numerous links is another problem that occurs when browsing through diverse content~\cite{abrams1998information}. Therefore, a semantic to the \feature{spatial arrangement} of information (single and multiple resources) is of major importance. Information discovery applications often employ sophisticated ways of spatially arranging resources to make it easier to browse through large amounts of information. Common ways of arranging multiple resources include \feature{lis}t, \feature{grid}, and \feature{gallery} layouts. Additionally, \feature{consistency} in the way multiple and single resources are represented helps form a conceptual model of how the application can be used and provides some degree of predictability~\cite{norman2002design}.
+\textbf{Spatial visualizations (exploration enablers):} Similar to link representation, spatial visualization of numerous links is another problem that occurs when browsing through diverse content~\cite{abrams1998information}. Therefore, a semantic to the \feature{spatial arrangement} of information (single and multiple resources) is of major importance. Information discovery applications often employ sophisticated ways of spatially arranging resources to make it easier to browse through large amounts of information. Common ways of arranging multiple resources include \feature{lis}t, \feature{grid}, and \feature{gallery} layouts. Additionally, \feature{consistency} in the way multiple and single resources are represented helps form a conceptual model of how the application can be used and provides some degree of predictability~\cite{norman2002design}.
 } % end section
 
 {\subsection{Activity: Curation}
@@ -497,12 +497,12 @@ By definition, digital information curation is the notion of managing, preservin
 \end{table}
 
 % Elena being consistent with formatting above ...
-\textbf{Action: Information management} is one of the key elements of information curation ~\cite{beagrie2008digital,whittaker2011personal}. These mechanisms are prevalent in applications that have a lot of information that is hard to categorize automatically or can mean something different for each user. In the context of Web information management, \feature{tag} and \feature{collection-based} information categorization play major roles.
+\textbf{Action: Information management.} Information management is one of the key elements of information curation ~\cite{beagrie2008digital,whittaker2011personal}. These mechanisms are prevalent in applications that have a lot of information that is hard to categorize automatically or can mean something different for each user. In the context of Web information management, \feature{tag} and \feature{collection-based} information categorization play major roles.
 %
 Resource categorization also helps establish relationships between various resources ~\cite{beagrie2008digital,whittaker2011personal}. Tagging can aid rediscovery and discovery in a socially curated space, as well as add more value to resources~\cite{gruber2007ontology}. Sample applications that facilitate information management are Pinterest, a tool that supports tagging and collection-based categorization, and Tumblr, a tool that supports tagging.
 %} % end subsubsection
 
-\textbf{Action: Information preservation} is a common Web task usually performed with the intent of revisiting information~\cite{abrams1998information,whittaker2011personal}. However, information gathering is sometimes performed with just the goal of collecting information~\cite{lindley2012s}. 
+\textbf{Action: Information preservation.} Information preservation is a common Web task usually performed with the intent of revisiting information~\cite{abrams1998information,whittaker2011personal}. However, information gathering is sometimes performed with just the goal of collecting information~\cite{lindley2012s}. 
 %
 Bookmarking is a traditional way of preserving information. \feature{Internal preservation of internal resources} means bookmarking resources can be reaccessed within the same application. Such bookmarking facilitates information curation within the system. \feature{Internal preservation of external resources} signifies bookmarking other Web pages within an application. \feature{External preservation} means bookmarking resources so that they are available through other bookmarking systems. An application must facilitate integration with other applications to enable external preservation~\cite{abrams1998information}.
 %
@@ -511,7 +511,7 @@ Bookmarking is a traditional way of preserving information. \feature{Internal pr
 % CUTCANDIDATE 
 %} % end subsubsection
 
-\textbf{Action: Augmentation:}
+\textbf{Action: Augmentation.}
 One of the most important elements of digital curation is augmentation: adding value to information ~\cite{beagrie2008digital,whittaker2011personal}. It is often performed within social bookmarking systems, and many Web applications allow users to add value to the resources they curate. 
 %
 One way to augment information is by \feature{annotating} it with comments and descriptions. Annotations are metadata attached to a resource that make it easier to search for and interpret information. For example, Yelp and TripAdvisor largely rely on reviews written by their users. 
@@ -519,8 +519,8 @@ One way to augment information is by \feature{annotating} it with comments and d
 \feature{Evaluation} methods can have various forms. They usually take place in socially curated information systems. However, evaluation can also contribute to personal reflection and information preservation. Many applications allow users to evaluate resources by rating them or recording other forms of approval or disapproval, such as "I like this" and "I dislike this" buttons on YouTube.
 %} % end subsubsection
 
-\textbf{Action: Sharing}
-information is key to empowering social information curation ~\cite{beagrie2008digital}. Therefore, the main components that facilitate sharing are the adding of resources, and external and internal information sharing.
+\textbf{Action: Sharing.}
+Sharing information is key to empowering social information curation ~\cite{beagrie2008digital}. Therefore, the main components that facilitate sharing are the adding of resources, and external and internal information sharing.
 %
 \feature{Adding resources} not only facilitates global Web information curation, but it also scales the information available through the system, providing more opportunities for information discovery. Resources can be created by users themselves, taken from some other sources online, or both. For example, YouTube allows users to upload their own videos, whereas Pinterest permits adding images from other sites in addition to users' personal images. 
 %
@@ -528,7 +528,7 @@ Sharing resources through different media and resharing them within the Web appl
 %} % end subsubsection
 
 
-\textbf{Action: Channel-picking} is an action of selecting information sources. A common enabler for this action is subscriptions that help users follow the news~\cite{java2007feeds}. To support channel-based discovery, an application must provide a subscription mechanism. For example, Rotten Tomatoes allows \feature{subscriptions} to \feature{newsletters}, but it does not allow subscriptions to movie critics that would be allowed with a user-based subscription mechanism such as the one in Pinterest. 
+\textbf{Action: Channel-picking}. Channel-picking is an action of selecting information sources. A common enabler for this action is subscriptions that help users follow the news~\cite{java2007feeds}. To support channel-based discovery, an application must provide a subscription mechanism. For example, Rotten Tomatoes allows \feature{subscriptions} to \feature{newsletters}, but it does not allow subscriptions to movie critics that would be allowed with a user-based subscription mechanism such as the one in Pinterest. 
 %
 In some applications, the content is updated and curated by users, and users can \feature{subscribe} to other \feature{users} or \feature{artifacts}. Similar to site subscriptions, user and artifact subscriptions are subscriptions to activity updates. These subscription mechanisms help with networking and provide awareness about other users' activities~\cite{millen2005social}. Such subscriptions also help filter new content delivered to the user. 
 %} % end subsubsection
@@ -543,12 +543,12 @@ In summary, information discovery and curation tools can have different implemen
 
 {\subsection{Cognitive Support: Enhancing the Discovery and Curation Experience}
 
-
-The information discovery and curation enablers just presented are design elements that afford various operations. For example, the search feature enables typing in a query and searching for information. These operations can be further supported by another set of design elements that introduce cognitive support, personalization, and automation. The primary goal of this part of the framework (see right column of Table 2) is to highlight opportunities for improvement over various information discovery and curation enabling mechanisms.
+The information discovery and curation enablers just presented are design elements that afford various operations. For example, the search feature enables typing in a query and searching for information. These operations can be further supported by another set of design elements that introduce cognitive support for those operations. Cognitive support elements are elements that make user experience smoother even if a given operation could be performed without it. They often become enhancements on existing enablers allowing for less cognitively demanding operations. The primary goal of this part of the framework (see right column of Table 2) is to highlight opportunities for improvement over various information discovery and curation enabling mechanisms.
 %
+
 Strategies for improvement include providing additional cognitive support for a given operation, personalizing the user experience, and automating an operation. Not all of the strategies are feasible for every single operation, and some operations can be supported in multiple ways. The following  outline some of the possibilities for advancing information discovery and curation features. 
 
-{\textbf{Enhancing Navigation:}
+{\textbf{Cognitive Support: Enhancing Navigation.}
 There are two common methods of enhancing information discovery when search-based navigation is used (see Table~\ref{table:framework_navigation}). The first method entails returning personalized results when the user enters a search query. \feature{Personalization} can be accomplished using a variety of techniques, including predefined user preferences, social interactions, context, browsing history, etc. The second method is to \feature{suggest search terms} to make it easier for the user to formulate their information need. For example, Yelp suggests search terms as the user enters their query.
 
 To further support referential navigation, applications can \feature{personalize} reference suggestions, such as \feature{categories}, \feature{tags}, and \feature{topics} of interest. They can also suggest relevant resources based on the one that the user already selected. As an example, after a user clicks a `pin', Pinterest showcases other similar `pins'.
@@ -561,14 +561,14 @@ Featured content can also be \feature{personalized} to improve information disco
 Finally, to make better use of subscribed content and to reduce human efforts when searching, an application can support various \feature{notification mechanisms}. These can advise the user about updates on the \feature{Website content}, various \feature{artifacts}, and activities of other \feature{users}.  
 
 } % end subsection
-{\textbf{Enhancing Exploration:}
+{\textbf{Cognitive Support: Enhancing Exploration.}
 \feature{Personalization} of the \feature{spatial} information representation usually has limited support in Web applications. Presumably, it is because consistency is more welcomed within information discovery applications than spatial personalization. However, it is still possible to personalize the arrangement of multiple resources or information within a single resource. 
 %
 \feature{Visual} and \feature{textual personalizations} are more common, especially when the content within the application is curated by its users.  For example, Flickr Web application for managing and sharing photographs personalizes album covers so that they are easier to rediscover. 
 % Similarly, `pinboards' on Pinterest have personalized cover images.
 
 
-{\textbf{Enhancing Curation:}
+{\textbf{Cognitive Support: Enhancing Curation.}
 Information management can be improved if the system helps the user make decisions about information categorization or tagging (see Table~\ref{table:framework_curation}). Alternatively, information can be \feature{categorized} or \feature{tagged automatically}. For example, when the user bookmarks a restaurant on Yelp, it is automatically categorized. The user can filter bookmarks by category whenever they go into the embedded bookmark manager. 
 
 Preservation operations can also be automated. An example of the most common automatic preservation mechanism is \feature{history}. Applications such as YouTube and Google Maps preserve users' browsing history so that they can review it later. Additionally, preservation mechanisms can be \feature{suggested} to the user.
