@@ -50,14 +50,14 @@
 
 
 %% Group authors per affiliation:
-
-\author[peggyemail]{Margaret-Anne Storey}
 \author[elenaemail]{Elena Voyloshnikova\corref{mycorrespondingauthor}}
+\author[peggyemail]{Margaret-Anne Storey}
+
 \address{University of Victoria}
 \address{3800 Finnerty Rd, Victoria, BC, Canada, V8P 5C2}
 
-\address[peggyemail]{mstorey@uvic.ca}
 \address[elenaemail]{elenavoy@uvic.ca}
+\address[peggyemail]{mstorey@uvic.ca}
 
 %% or include affiliations in footnotes:
 \cortext[mycorrespondingauthor]{Corresponding author}
@@ -358,7 +358,7 @@ In summary, while it is not feasible to list all of the possible motives for inf
 
 {\subsection{Discovery and Curation Activities}
 
-The next part of the framework deals with the actions associated with enablers of information discovery and curation. A more detailed overview is depicted in Figure~\ref{fig:enablers}; the two main activities (discovery and curation) are decomposed into actions, and each of the actions is supported by a group of features or mechanisms that enable a given aspect of discovery or curation in a Web application.
+The next part of the framework deals with the actions associated with enablers of information discovery and curation. A more detailed overview is depicted in Figure~\ref{fig:enablers}; the two main activities (discovery and curation) are decomposed into actions, and each of the actions is supported by a group of enablers (features or mechanisms) that provide means for a given action of discovery or curation in a Web application.
 
 
 \begin{figure}[htp!]
@@ -370,7 +370,7 @@ The next part of the framework deals with the actions associated with enablers o
 \end{figure}
 
 {\subsubsection{Action: Navigation in Discovery (Following Information Scent)}
-To discover information, a user needs a way to navigate to it. Navigation in information discovery can be thought of as following an information scent. In general, the information scent models deal with how users identify value, cost, or the access path of information sources based on proximal cues, such as links, icons, categories, etc.~\cite{pirolli1999information}. Common methods of navigation that facilitate information discovery include descriptional, referential, opportunistic, and system-regulated.  We describe these methods below and direct the reader Table~\ref{table:framework_navigation} to see an overview of these methods and the enabling mechanisms possible for each method. 
+To discover information, a user needs a way to navigate to it. Navigation action in information discovery can be thought of as following an information scent. In general, the information scent models deal with how users identify value, cost, or the access path of information sources based on proximal cues, such as links, icons, categories, etc.~\cite{pirolli1999information}. Common types of navigation actions that facilitate information discovery activity include descriptional, referential, opportunistic, and system-regulated navigation.  We describe these types of navigation actions below and direct the reader to Table~\ref{table:framework_navigation} to see an overview of these actions and the enablers possible for each action. 
 
 
 \begin{table}[!htbp]
@@ -398,7 +398,7 @@ To discover information, a user needs a way to navigate to it. Navigation in inf
 \label{table:framework_navigation} 
 \end{table}
 
-\textbf{Descriptional Navigation (Type of Navigation Action):} A navigation is descriptional when the user has a means of describing their information need. It is usually implemented as \feature{search-based navigation} since it allows users to enter a search query and describe what they want to find.  
+\textbf{Descriptional Navigation (Type of Navigation Action):} A navigation action is descriptional when the user has a means of describing their information need. It is usually implemented as \feature{search-based navigation} since it allows users to enter a search query and describe what they want to find.  
 % CUTCANDIDATE we mention Stumbleupon below and integration
 %Some applications use other methods of navigation, such as StumbleUpon and some Web applications are \feature{integrated} with others, enabling users to search multiple Websites at once. 
 % CUTCANDIDATE 
@@ -408,33 +408,31 @@ Some modern descriptional navigation systems are voice-activated.
 %There are numerous ways in which descriptional navigation supports information discovery. Search-based navigation often serves as an entry point for information seeking~\cite{levene2011introduction}. When the motive behind information discovery has a well-articulated information need, then the user can express their information need by entering a search query. 
 % CUTCANDIDATE
 
-Descriptional navigation can also help to rediscover information, but it is not always a reliable way of refinding information ~\cite{cockburn2003improving}. In information portals that provide access to fairly ambiguous information and that have regularly updated information flow, the search feature is usually designed around retrieving information related to some general topic. In order to make search-based navigation a reliable way to rediscover information, it must return consistent results. 
+Descriptional navigation enablers can also help to rediscover information, but it is not always a reliable way of rediscovery ~\cite{cockburn2003improving}. In information portals that provide access to fairly ambiguous information and that have regularly updated information flow, the search-based navigation enablers are usually designed around retrieving information related to some general topic. In order to make search-based navigation a reliable way to rediscover information, it must return consistent results. 
 } % end subsection
 
 
-
-
 \textbf{Referential Navigation (Type of Navigation Action):}
-A navigation is referential when the user finds a reference to the term that they are looking for, such as a link or icon. This reference represents an information scent. The underlying assumption of this method of navigation is that the user can recognize the needed information or a reference to it as they see it~\cite{waterworth1991model}. 
+A navigation action is referential when the user finds a reference to the term that they are looking for, such as a link or icon. This reference represents an information scent. The underlying assumption of this type of navigation action is that the user can recognize the needed information or a reference to it as they see it~\cite{waterworth1991model}. 
 
-Referential navigation mechanisms can take many forms. Some common types are \feature{categories}, \feature{facets}, \feature{filters} and \feature{tags}. In some applications, users can search by a given \feature{resource}. For example, YouTube provides a playlist with music related to the currently playing song. Information scent representatives may also reference sources outside of the given system, enabling another type of \feature{integration} of Web applications. 
+Referential navigation enablers can take many forms. Some common types are \feature{categories}, \feature{facets}, \feature{filters} and \feature{tags}. In some applications, users can search by a given \feature{resource}. For example, YouTube provides a playlist with music related to the currently playing song. Information scent representatives may also reference sources outside of the given system, enabling another type of \feature{integration} of Web applications. 
 %
-Referential navigation can help the user identify their information needs by suggesting terms, topics or categories to use, and therefore, direct the user to relevant resources~\cite{levene2011introduction}. It can also help narrow the results to a specific type of resource so that further discovery is bounded by that type. For example, TripAdvisor helps narrow search results by allowing users to choose among hotels, flights, vacation rentals, restaurants and destinations.
+Referential navigation enablers can help the user identify their information needs by suggesting terms, topics or categories to use, and therefore, direct the user to relevant resources~\cite{levene2011introduction}. It can also help narrow the results to a specific type of resource so that further discovery is bounded by that type. For example, TripAdvisor helps narrow search results by allowing users to choose among hotels, flights, vacation rentals, restaurants and destinations.
 
 \textbf{Opportunistic Navigation (Type of Navigation Action):}
-Opportunistic navigation is a method of navigating `randomly' through resources and Web pages. We call this `opportunistic' because it is not truly random, but its serendipitous nature makes users feel like it is. This navigation method is especially useful when the information need is fully undefined.
+Opportunistic navigation is a type of navigation action where the user `randomly' navigates through resources and Web pages. We call this `opportunistic' because it is not truly random, but its serendipitous nature makes users feel like it is. This type of navigation action is especially useful when the information need is fully undefined.
 %
-Many applications support opportunistic jumping from one resource to another. For example, StumbleUpon makes it possible to explore the Web in general---other Websites and Web applications, allows for \feature{integrated} navigation---whereas Wikipedia provides opportunistic access to its own articles. 
+Many applications support opportunistic jumping from one resource to another. For example, StumbleUpon makes it possible to explore the Web in general---other Websites and Web applications, allows for \feature{integrated} opportunistic navigation---whereas Wikipedia provides opportunistic access to its own articles. 
 
 
 \textbf{System-regulated Navigation (Type of Navigation Action):}
-Web applications often display information without the user's active participation. This information can be a \feature{news feed}, \feature{featured} deals or articles or other types of content. We refer to this type of navigation as system-regulated because it occurs when the application brings the content to the user instead of the user applying any effort to find content. It differs from opportunistic navigation because the the user cannot choose when to observe new information; instead, all updates are regulated by the application. 
+Web applications often display information without the user's active participation. This information can be a \feature{news feed}, \feature{featured} deals or articles or other types of content. We refer to this type of navigation action as system-regulated because it occurs when the application brings the content to the user instead of the user applying any effort to find content. It differs from opportunistic navigation because the the user cannot choose when to observe new information; instead, all updates are regulated by the application. 
 %
-One application that utilizes system-regulated navigation is Yelp. As soon as the user enters the site, this tool displays featured restaurants as well as the user's recent activities. As with any other navigation method, system-regulated navigation can ensure cross-application \feature{integration} by displaying content from other Web applications. 
+One application that supports system-regulated navigation action is Yelp. As soon as the user enters the site, this tool displays featured restaurants as well as the user's recent activities. As with any other navigation actions, system-regulated navigation can ensure cross-application \feature{integration} by displaying content from other Web applications. 
 
 
 {\subsubsection{Action: Exploration in Discovery (Examining Information Patches)}
-Exploration of resources is another action that facilitates information discovery. Visual and spatial cues, which help representing single or multiple resources, enable this action by allowing users to conveniently examine information patches (please refer to Table~\ref{table:framework_exploration}). 
+Exploration of resources is another action that facilitates the activity of information discovery. Visual and spatial cues, which help representing single or multiple resources, serve as enablers for this action by allowing users to conveniently examine information patches (please refer to Table~\ref{table:framework_exploration}). 
 
 \begin{table}[!htbp]
 \small
@@ -463,7 +461,7 @@ Exploration of resources is another action that facilitates information discover
 
 \textbf{Visual and textual cues (exploration enablers):} \feature{Visual and textual information cues} are also important for a single resource exploration. Not only do they help navigation within the resource or Web page, but they can also contribute to the learning experience. For example, if the user would like to know what something looks like, they can learn it from the representation in question.  
 
-\textbf{Spatial visualizations (exploration enablers):} Similar to link representation, spatial visualization of numerous links is another problem that occurs when browsing through diverse content~\cite{abrams1998information}. Therefore, a semantic to the \feature{spatial arrangement} of information (single and multiple resources) is of major importance. Information discovery applications often employ sophisticated ways of spatially arranging resources to make it easier to browse through large amounts of information. Common ways of arranging multiple resources include \feature{lis}t, \feature{grid}, and \feature{gallery} layouts. Additionally, \feature{consistency} in the way multiple and single resources are represented helps form a conceptual model of how the application can be used and provides some degree of predictability~\cite{norman2002design}.
+\textbf{Spatial visualizations (exploration enablers):} Similar to link representation, effective spatial visualization of numerous links can be another challenge of supporting browsing through diverse content~\cite{abrams1998information}. Therefore, a semantic to the \feature{spatial arrangement} of information (single and multiple resources) is of major importance. Information discovery applications often employ sophisticated ways of spatially arranging resources to make it easier to browse through large amounts of information. Common ways of arranging multiple resources include \feature{list}, \feature{grid}, and \feature{gallery} layouts. Additionally, \feature{consistency} in the way multiple and single resources are represented helps form a conceptual model of how the application can be used and provides some degree of predictability~\cite{norman2002design}.
 } % end section
 
 {\subsection{Activity: Curation}
