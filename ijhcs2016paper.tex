@@ -588,7 +588,7 @@ In summary, providing cognitive support by suggesting content, actions, and chan
 
 \section{Framework in Action}
 \label{section:validation}
-In order to validate the conceptual framework and verify its stability, we used it to design a tool for location based photograph discovery and curation, we used it to evaluate five of the applications that were used in the construction of the preliminary framework: Pinterest, Google Maps, Wikipedia, Delicious, and Yelp. Due to space limitations, we only present the evaluation for one of the tools, Pinterest. The other tool evaluations and the location based discovery tool description can be found in~\cite{voyloshnikova2015}. As for Pinterest, we first summarize our observations resulting from asking the questions from the framework in a systematic manner. Based on our assumptions, judgment, and use of the framework, we propose directions for future development and reflect on certain needed mechanisms, as not all mechanisms are always required. 
+ The other tool evaluations and the location based discovery tool description can be found in~\cite{voyloshnikova2015}. As for Pinterest, we first summarize our observations resulting from asking the questions from the framework in a systematic manner. Based on our assumptions, judgment, and use of the framework, we propose directions for future development and reflect on certain needed mechanisms, as not all mechanisms are always required. 
 
 Pinterest is a Web application designed for image discovery and curation, oriented towards finding inspiration and collecting knowledge about hobbies and interests~\cite{gilbert2013need,zarro2012pinterest,ottoni2013ladies}.  Users of Pinterest are commonly referred to as `pinners'. Resources on Pinterest are called `pins', and each `pin' consists of an image, a short description, the user's name, and the name of the collection that the pin belongs to. More information is available once the user clicks on a `pin'.
 
@@ -609,7 +609,32 @@ Information management is accomplished through sorting `pins' into different col
 Applying the framework to Pinterest revealed that it employs a  variety of techniques to facilitate information discovery and curation. However, individual mechanisms could be further improved. For example, \feature{textual previews} of multiple and individual resources is rather limited and provides little insight into what information source Websites actually contain. Furthermore, Pinterest could benefit from \feature{automatically classifying} `pins' into `boards' because finding an appropriate `board' for a `pin' can be difficult when a user has a large number of existing `boards'. Overall, Pinterest provides rich support for information discovery and curation, and in some ways, enables each of the discovery or curation actions of the conceptual framework. 
 
 \subsection{Framework Use Demonstration}
-{}
+{
+In order to validate the conceptual framework and verify its stability, we used it to evaluate five of the applications that were used in the construction of the preliminary framework: Pinterest, Google Maps, Wikipedia, Delicious, and Yelp. A summary of present and absent action enablers and cognitive support mechanisms for these tools can be found in Table~\ref{table:tools_evaluation}
+
+\begin{table}[htbp]
+\small
+\begin{tabular}{|p{0.15\columnwidth}| p{0.42\columnwidth}| p{0.42\columnwidth}|}
+
+\hline
+\textbf{Application} & \textbf{Present action enablers and cognitive support} & \textbf{Absent or limited action enablers and cognitive support}
+\\
+\hline
+Pinterest       & Guided search / Category-based navigation / Resource-based referential navigation / Integrated referential navigation / Internal preservation of internal resources / Internal preservation of external resources / User subscriptions / Artifact subscriptions / Automatic notifications	& Opportunistic navigation / Textual previews / Automatic classification\\ \hline
+Delicious       &  		&  \\
+\hline
+Wikipedia    &    	&  \\
+\hline
+Google Maps   &   	& \\
+\hline
+Yelp  &   			& \\
+\hline
+\end{tabular}
+\caption{Tool Features and Gaps}
+% as of May 15, 2014}
+\label{table:tools_evaluation} 
+\end{table}
+}
 \subsection{Evaluating a Web Portal}
 {}
 \subsection{Designing a Place Discovery Application}
