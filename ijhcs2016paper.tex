@@ -3,6 +3,11 @@
 \usepackage{lineno,hyperref}
 \usepackage[section]{placeins}
 \usepackage{multirow}
+\usepackage{rotating}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
 \modulolinenumbers[5]
 
 \journal{Journal of \LaTeX\ Templates}
@@ -588,57 +593,177 @@ In summary, providing cognitive support by suggesting content, actions, and chan
 
 \section{Framework in Action}
 \label{section:validation}
- The other tool evaluations and the location based discovery tool description can be found in~\cite{voyloshnikova2015}. As for Pinterest, we first summarize our observations resulting from asking the questions from the framework in a systematic manner. Based on our assumptions, judgment, and use of the framework, we propose directions for future development and reflect on certain needed mechanisms, as not all mechanisms are always required. 
-
-Pinterest is a Web application designed for image discovery and curation, oriented towards finding inspiration and collecting knowledge about hobbies and interests~\cite{gilbert2013need,zarro2012pinterest,ottoni2013ladies}.  Users of Pinterest are commonly referred to as `pinners'. Resources on Pinterest are called `pins', and each `pin' consists of an image, a short description, the user's name, and the name of the collection that the pin belongs to. More information is available once the user clicks on a `pin'.
-
-Motivated by the desire to gain inspiration and knowledge, Pinterest users have either under-defined or absent information needs. Other motives for using Pinterest could be to rediscover previously found information (and possibly use it), to be oriented about new `pins' that emerge from subscribed channels, and to gather information for future rediscovery and the act of collection itself.
-
-Navigation in Pinterest is mostly supported by descriptional, referential, or system-regulated mechanisms. Although an explicit \feature{opportunistic navigation mechanism} is absent, both descriptional and referential mechanisms usually return novel and serendipitous results to facilitate opportunistic browsing. Descriptional navigation is enabled with a \feature{guided search} mechanism that suggests search terms to the user. 
-
-Referential navigation is enabled in Pinterest using a range of techniques. To support articulation of an information need, a \feature{category-based} navigation mechanism makes suggestions on subcategories or interests. Through clicking on a `pin', the user can see related resources, enabling \feature{resource-based} referential navigation. Most of the images on Pinterest are `pinned' from other Websites, and users are provided with links to their original sources. Therefore, Pinterest supports \feature{integrated} referential navigation.
-
-System-regulated navigation within Pinterest is highly personalized. When the user enters the site, they see a history of their own information gathering activities and updates from the people they are subscribed to. Additionally, the application suggests \feature{featured} `pins' based on the user's interests.
-
-To reinforce the discovery of visual data, Pinterest provides extensive support for various exploration mechanisms. Multiple resources are represented in a \feature{gallery layout}, often referred to as a 'pinboard'. This layout provides good spatial support for exploration and makes it easier to build a mental model of the tool by drawing analogies with a real pinboard. Users can create multiple `pinboards' (also known as `boards') which have \feature{personalized} covers to enhance future exploration and rediscovery.
-%
-A single resource does not have a lot of distinct spatial arrangements, however, it provides a visual glimpse into what can be found on the Website that the image came from, with \feature{textual preview} being limited to the address of the Website. 
-
-Information management is accomplished through sorting `pins' into different collections (`pinboards') thus enabling \feature{collection-based classification} and \feature{internal preservation of internal and external resources}. All user information collecting actions are \feature{automatically} preserved and displayed. Users can augment the information pool by uploading new `pins', commenting on existing `pins', or adding descriptions. Users can also \feature{internally share} 'pins' among themselves. Channel-picking actions are carried out by following or \feature{subscribing} to users or individual `pinboards'. The system also \feature{automatically} sends \feature{notifications} though emails and \feature{suggests} new `boards' to follow.
-
-Applying the framework to Pinterest revealed that it employs a  variety of techniques to facilitate information discovery and curation. However, individual mechanisms could be further improved. For example, \feature{textual previews} of multiple and individual resources is rather limited and provides little insight into what information source Websites actually contain. Furthermore, Pinterest could benefit from \feature{automatically classifying} `pins' into `boards' because finding an appropriate `board' for a `pin' can be difficult when a user has a large number of existing `boards'. Overall, Pinterest provides rich support for information discovery and curation, and in some ways, enables each of the discovery or curation actions of the conceptual framework. 
-
-\subsection{Framework Use Demonstration}
+In this section, we demonstrate the value of the framework and show its applications in tool evaluation and design. 
+\subsection{Comparing Information Discovery Applications}
 {
-In order to validate the conceptual framework and verify its stability, we used it to evaluate five of the applications that were used in the construction of the preliminary framework: Pinterest, Google Maps, Wikipedia, Delicious, and Yelp. A summary of present and absent action enablers and cognitive support mechanisms for these tools can be found in Table~\ref{table:tools_evaluation}
+To demonstrate how the framework can be used to evaluate and compare information discovery applications, we used it to evaluate five of the applications that were used in the construction of the preliminary framework: Pinterest, Google Maps, Wikipedia, Delicious, and Yelp. Our findings are summarized in Table~\ref{table:tools_evaluation}. 
 
-\begin{table}[htbp]
-\small
-\begin{tabular}{|p{0.15\columnwidth}| p{0.42\columnwidth}| p{0.42\columnwidth}|}
+\begin{sidewaystable}[]
+\tiny
+\centering
+\label{tools_evaluation}
+\begin{tabular}{|L{0.07\linewidth}| L{0.16\linewidth}| L{0.16\linewidth}|L{0.16\linewidth}|L{0.16\linewidth}|L{0.16\linewidth}|}
+\hline
+Level of Support             & Pinterest                                                                                                                                                                                                                                                                                                                              & Google Maps                                                                                                                                                                                                                    & Wikipedia                                                                                                                                                                                                                                                                                                                                                                                                                                                                            & Delicious                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  & Yelp                                                                                                                                                                                                                                                                                                                                                        \\
+\hline
+Enablers + Cognitive Support & \textbf{Descriptional navigation:} guided search\newline
 
+\textbf{Referential navigation:} categories suggest related topics of interest\newline
+
+\textbf{System-regulated navigation:} personalized featured content display\newline 
+
+\textbf{Channel-picking:} suggesting users and artifacts for subscription                       & 
+\textbf{Descriptional navigation:} search returns personalized results\newline 
+\textbf{System-regulated navigation:} personalized featured content display of the nearby area\newline
+\textbf{Preservation:} previous search history\newline                                           &                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      & 
+\textbf{Management:} tag-based categorization suggests tags\newline                                                                                                                                                                                                                                                                                                                                                                                                                                          & 
+\textbf{Descriptional navigation:} search returns personalized results\newline 
+\textbf{System-regulated navigation:} personalized location-based featured content                                                                                                                                                                                                                        \\
 \hline
-\textbf{Application} & \textbf{Present action enablers and cognitive support} & \textbf{Absent or limited action enablers and cognitive support}
-\\
+Enablers                     
+&
+\textbf{Visual representation:} visual preview of what can be found on Web pages that resources link to\newline 
+\textbf{Spatial representation:} gallery layout (pinboard)\newline
+\textbf{Management:} collection-based classification\newline
+\textbf{Preservation:} internal preservation of internal and external resources\newline
+\textbf{Augmentation:} annotation (commenting on pins)\newline
+\textbf{Communication:} internal sharing 
+&
+\textbf{Referential navigation:} integrated references to Google+\newline
+\textbf{Visual representation:} consistency in how resources are represented\newline
+\textbf{Spatial representation:} spatial semantic - resources placed on a map\newline
+\textbf{Communication:} external map sharing 
+&
+\textbf{Descriptional navigation:} search-based navigation\newline
+\textbf{Referential navigation:} categories (table of contents)\newline
+\textbf{Opportunistic navigation:} opportunistic navigation feature (“Random article”)\newline
+\textbf{System-regulated navigation:} featured content\newline
+\textbf{Visual representation:} visual cues (images in articles)\newline
+\textbf{Spatial representation:} consistency -- table of contents on the top left of the page, quick information and visuals on the right\newline
+\textbf{Augmentation:} annotation and editing\newline
+\textbf{Communication:} adding new articles
+&
+\textbf{Descriptional navigation:} search-based navigation\newline
+\textbf{Referential navigation:} integrated referential navigation\newline \textbf{System-regulated navigation:} featured content (“Trending”)\newline
+\textbf{Visual representation:} visual previews in the “Trending” section\newline 
+\textbf{Spatial representation:} grid layout in the “Trending” section\newline
+\textbf{Channel-picking:} user subscriptions\newline
+\textbf{Preservation:} internal preservation of internal and external resources\newline
+\textbf{Augmentation:} annotation (commenting on links)\newline
+\textbf{Communication:} adding new resources (links)
+&
+\textbf{Referential navigation:} categories and filters\newline 
+\textbf{Visual representation:} visual cues and previews\newline
+\textbf{Spatial representation:} list, grid, and gallery layouts\newline \textbf{Preservation:} internal preservation of internal resources\newline
+\textbf{Augmentation:} evaluation (‘Useful’, ‘Funny’, or ‘Cool’ metric for reviews)\newline
+\textbf{Communication:} adding resources (reviews)Channel-picking:site subscription \\
 \hline
-Pinterest       & Guided search / Category-based navigation / Resource-based referential navigation / Integrated referential navigation / Internal preservation of internal resources / Internal preservation of external resources / User subscriptions / Artifact subscriptions / Automatic notifications	& Opportunistic navigation / Textual previews / Automatic classification\\ \hline
-Delicious       &  		&  \\
+Indirect                     
+&
+\textbf{Opportunistic navigation:} descriptional and referential navigation enablers return serendipitous results                                                                                                                                                                                                                                & 
+\textbf{Augmentation:} evaluation and annotation are possible through Google+                                                                                                                                                            &                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            &                                                                                                                                                                                                                                                                                                                                                              \\
 \hline
-Wikipedia    &    	&  \\
+Enabler Gaps                 
+&
+\textbf{Visual representation:} textual preview of what can be found on Web pages that resources link to                                                                                                                                                                                                                                         & 
+\textbf{Channel-picking:} site or artifact subscriptions\newline
+\textbf{Opportunistic navigation:} opportunistic navigation feature\newline
+\textbf{Management:} public or private collection-based categorization                                                            &
+\textbf{Channel-picking:} site subscription\newline
+\textbf{Management:} tag-based or collection-based categorization\newline
+\textbf{Preservation:} internal preservation of internal resources                                                                                                                                                                                                                                                                                                                                     & 
+\textbf{Visual representation:} visual previews in sections other than “Trending”\newline
+\textbf{Spatial representation:} consistency\newline
+\textbf{Opportunistic navigation:} opportunistic navigation feature                                                                                                                                                                                                                                                                                                                         & 
+\textbf{Opportunistic navigation:} opportunistic navigation feature\newline
+\textbf{Management:} category-based categorization                                                                                                                                                                                                                                                           \\
 \hline
-Google Maps   &   	& \\
-\hline
-Yelp  &   			& \\
-\hline
+Cognitive Support Gaps       
+&
+\textbf{Management:} automatic collection-based categorization                                                                                                                                                                                                                                                                                   &                                                                                                                                                                                                                                & 
+\textbf{System-regulated navigation:} personalized featured content                                                                                                                                                                                                                                                                                                                                                                                                                           & 
+\textbf{Descriptional navigation:} guided search                                                                                                                                                                                                                                                                                                                                                                                                                                                     &                                                                                                                                                                                                                                                                                                                                                            
+\\ \hline
 \end{tabular}
-\caption{Tool Features and Gaps}
-% as of May 15, 2014}
-\label{table:tools_evaluation} 
-\end{table}
+
+\caption{
+\tiny
+Tools and Corresponding Support for Information Discovery and Curation. For every tool, information discovery and curation action (or type of action) is placed within 5 categories based on a level of support that a given tool provides: Enablers + Cognitive Support (a tool provides both enablers and cognitive support), Enablers (a tool provides enablers but not cognitive support), Indirect (a tool may support a given action indirectly), Enabler Gaps (a tool lacks support for a given action), Cognitive Support Gaps (a tool has a necessary enabler(s) but lacks cognitive support).  For every action, there is one or more examples demonstrating an enabler or a cognitive support mechanism.
 }
+\end{sidewaystable}
+
+The table highlights the differences in support of different information discovery and curation actions among examined applications. For example, descriptional navigation is supported across all five applications but on different levels and in different ways. Pinterest supports this type of navigation action by having guided search, a search feature that suggest search terms to the user. The search features of Google Maps and Yelp both return results in the nearby area which helps the user narrow down their information need. Wikipedia and Delicious support descriptional navigation with the use of the search feature enabler; however, they do not provide any additional cognitive support unlike Google Maps, Yelp, and Pinterest. Having additional cognitive support mechanisms could improve user experience and allow for more effortless information discovery within these applications.
+
+Web applications can support various information discovery and curation actions indirectly. For example even though users cannot annotate resources in Google Maps, they can do so in Google+, so information augmentation is still enabled. Another example is opportunistic navigation in Pinterest, where there is no definite opportunistic navigation feature; however descriptional and referential navigations return serendipitous results. These examples underline the importance of asking framework questions when evaluating a tool instead of just looking for specific enablers or cognitive support mechanisms.
+
+By applying the framework to these five information discovery applications, we demonstrated how the framework can be used to compare different tools and to find gaps for tool improvement and new developments. The table presented in this section serves as a summary of resulting tool evaluations. Our conceptual framework can be used as a tool for more detailed evaluations as presented in the following subsection.  
+
 \subsection{Evaluating a Web Portal}
-{}
+{
+The conceptual framework for information discovery and curation can be used for summative web application evaluation with an objective of discovering gaps for improvement and future development. In this section, we present an evaluation of MSN, a web portal that enables discovery of information on various topics such as news, weather, and entertainment, and provides access to various services such as shopping and gaming. We first summarize our observations resulting from asking the questions from the framework in a systematic manner. Based on our assumptions, judgment, and use of the framework, we propose directions for future development and reflect on certain needed mechanisms, as not all mechanisms are always required.
+
+
+Navigation action in MSN is mostly supported by descriptional, referential, and system-regulated enablers. There are no explicit enablers for opportunistic navigation, and hence there is no support for this type of navigation action. Descriptional navigation is enabled with guided search which suggests search terms to the user helping them describe their information need. Categories and filters aid in performing referential navigation action. MSN also delivers featured content which enables system-regulated navigation. 
+
+MSN offers a variety of visual and spacial exploration enablers. Multiple resources are displayed in a combination of gallery, list, and grid layouts, with different sections of the site utilizing one or the other layout. Visual and textual previews of multiple resources aid the user in identifying articles of interest. Spatial and visual representations of a single resource depend on the type of the resource presented, and therefore, the site has different types of exploration enablers for videos, photo galleries, articles, etc. Spatial proximal cues of both multiple and single resources lack consistency making it difficult to identify a well-defined conceptual model of the site.  
+
+In addition to discovery, MSN enables various curation actions with an exception of information management and limited support for information preservation. External sharing is enabled through sharing links to Facebook, Twitter, Skype, and email. It is possible to use email as an external storage, and therefore, it can be thought of as an enabler for external preservation of internal resources. Users can augment articles they find with commenting (annotation) enabler. Channel-picking is enabled through site subscription, so users can receive updates with new articles from MSN. 
+
+Applying the framework to MSN revealed that that the tool employs a variety of techniques to facilitate information discovery and curation. However, the framework also helped reveal a number of gaps in information discovery and curation support. Besides already mentioned gaps in support for opportunistic navigation, exploration, information management, and preservation, MSN has limited support for augmentation. Introducing an evaluation mechanism could improve support for this type of curation action. Adding cognitive support mechanisms such as personalization to the already existing system-regulated enablers could further improve user experience.
+}
 \subsection{Designing a Place Discovery Application}
-{}
+{
+To verify that the conceptual framework is effective, we applied it to design a Web application for discovering photographs of places. This subsection outlines the role the framework played in the design process of this Web application, the resulting application and its features, and some prospects for future application development.
+
+A need for a place photo discovery application was revealed during the construction phase of the framework. Asking questions from the framework at its preliminary stages about existing applications (e.g., Pinterest and Google Maps) helped expose the need for discovery and curation of place photos with additional access to place location data and other details. It also helped gather some of the requirements for a photo discovery application. Once user needs and motives for information discovery and curation of place photographs were established, we repeatedly consulted the framework throughout the development process in order to systematically select the next feature to be implemented.
+
+In general, Web applications that are tailored towards image discovery, such as Pinterest and We Heart It, support the user's motive to close a knowledge gap that is characterized by underdefined information needs. To deal with the issue of having an underdefined information need, an application has to help the user to formulate their information need as well as support serendipitous discovery of information. In order to enable serendipitous discovery, Web applications regularly update the content they provide by allowing users to add new resources and curate information.
+
+The task of image seeking for the purpose of finding inspiration (as is the case for the majority of Pinterest users) can stretch out to multiple sessions over an undetermined period of time. Curation mechanisms, such as preservation and management, help the user to rediscover information that allows them to reflect on the previous findings and continue image seeking. 
+
+It is common for users to discover place photographs on Pinterest, and Pinterest does display a map when a location of a place is known within the system. However, this feature only applies to a relatively small fraction of existing `pins'. In addition, Pinterest also facilitates discovery of images related to diverse topics and interests, which makes it harder to tailor the user experience to facilitate discovery and curation based on their desired motives.
+
+When it comes to place discovery, the Google Maps application provides the ultimate support for finding place and business locations. It is also possible to see what a place looks like based on an associated image. However, since the application is oriented towards finding specific information, visual and spatial photo exploration mechanisms are not well-developed. The user can preserve a given place but cannot preserve or organize photographs of places. Google Maps also lacks category-based navigation mechanisms which can help the user identifying their information needs. 
+
+The findings above helped us define a motive for a place photo discovery application, which is \textit{to find inspirational (underdefined) place photographs, to collect and manage found information for future use and retrieval, as well as to provide access to more defined information about the place}, such as its location. After formalizing the motive for the application use, we referred back to the framework to choose options for supporting various aspects of information discovery and curation while developing the application.
+
+The resulting Web application, KeePlaces\footnote[1]{A prototype of KeePlaces is available at www.keeplaces.com} (see Figure~\ref{fig:keeplaces}), supports discovery and curation of place photographs, and is integrated with Google Maps. Below is a description the main features of KeePlaces in accordance with the conceptual framework\footnote[2]{This evaluation of KeePlaces was performed in January 2015 during early development stages of the tool.}. 
+
+%Additional screenshots of Keeplaces and its mechanisms can be found in Appendix~\ref{chapter:appendix_keeplaces}.
+
+\begin{figure}[ht!]
+	\noindent
+	\centering
+	\includegraphics[width=\linewidth]{figures/keeplaces.png}
+	\caption{KeePlaces Interface}
+	\label{fig:keeplaces}
+\end{figure}
+
+KeePlaces supports descriptional, referential, and partially system-regulated navigation actions. It is possible to perform the action of descriptional navigation using \textbf{integrated search} that in turn utilizes Google Maps' APIs to search for photographs of different places. The search feature is not \textbf{guided}, and at this time, results are not \textbf{personalized}. Descriptional navigation enabler could be improved by suggesting search terms to the user once they start typing. However, personalizing the results of searching might not be a good strategy because users might want to explore photographs that they have not seen before or that are of places unrelated to them.
+
+Users can navigate using \textbf{categories}, which enable referential navigation action. Currently, categories that users might be interested in are only approximately estimated, and no other referential enabler is employed for navigating within the application. However, the users can navigate to Google Maps by clicking the ``View Google Maps" link beside every photograph to see where the place is located and perform any other actions within the Google Maps application. This feature enables \textbf{integrated referential navigation}.
+
+With the preliminary prototype, as the user first visits KeePlaces, the system displays predefined tourist attraction photographs, and therefore, supports system regulated navigation by displaying \textbf{featured content}. However, this solution is temporary since system-regulated navigation could be further improved by \textbf{personalizing featured content} and delivering \textbf{notifications} about content updates to the user.
+
+Currently, \textbf{opportunistic navigation action} is not enabled in KeePlaces, although users with undefined information needs could benefit from a corresponding enabler. Alternatively, other navigation enablers could return serendipitous results.
+
+Spatial exploration of multiple resources is enabled using a \textbf{gallery layout}. A \textbf{grid layout} could be an alternative way to present information within the application. However, a \textbf{list} is not always an optimal solution to presenting visual data.
+Resources are represented as photographs, and these photographs serve as \textbf{visual cues} to what the places they represent look like. In addition to visual cues, \textbf{textual cues} provide names of different places delivering additional exploration support.
+
+KeePlaces does not currently support exploration of individual resources. However, enabling it could improve future information discovery. Furthermore, \textbf{personalizing} visual or textual cues can help users rediscover place photographs and collections.
+
+Curation in KeePlaces is supported through management and preservation. Management is implemented using \textbf{collection-based classification}.
+Every photo discovered on the site can be bookmarked by clicking the `Keep' button and choosing a collection. This bookmarking mechanism enables \textbf{internal preservation of internal resources} since it allows users to save information found within KeePlaces.
+
+Some actions of curation, such as information sharing, augmentation, and channel-picking, have not been enabled yet. These actions are important because they contribute to collaborative and creative environments as well as help build community around the Web application. In KeePlaces, having users add new photographs and share them among themselves could scale the application usage up and enrich the quality of the content provided.
+
+In order to support channel-picking, a Web application must regularly update its content, which can be done by either moderators or general users. Then, adding \textbf{subscription mechanisms} and \textbf{notifications} can further empower channel-based discovery.  For place photo discovery, a tool such as KeePlaces can provide updates about photographs preserved by other users, new photographs added to the pool of information, spatial featured photographs, etc.
+
+Although KeePlaces has not been released as a stable Web application, it supports the discovery and curation of place photographs from all over the world. Applying the framework as presented can guide its future development and evaluation. 
+
+The conceptual framework for information discovery and curation guided the design of the place photo discovery application, KeePlaces. The framework assisted in identifying the need for a Web application that facilitates the discovery of place photographs, and it highlighted which design elements are important in this specific case. Similarly, the framework can aid in the design process of other applications.
+
+When the motive for an application use is known, one can evaluate Web applications from similar domains to identify gaps in the provided features. Finding feature gaps is a challenging task, but the framework can assist by making it easier to relate relevant information behaviour with concrete mechanisms and features. Ongoing reevaluation of the tool and its competitors using the framework can help with continuous development processes and improve user experience when they interact with the system.
 
 } % end section
 
