@@ -228,7 +228,7 @@ Our methodology involved an iterative process of selecting tools, analyzing them
 \hline
 Pinterest       & www.pinterest.com 	& Visual discovery tool \\
 \hline
-Delicious       & delicious.com 		& Social bookmarking service \\
+Delicious       & del.icio.us 		& Social bookmarking service \\
 \hline
 Tumblr          & www.tumblr.com 		& Microblogging platform \\
 \hline
@@ -279,16 +279,16 @@ Thesaurus       & thesaurus.com         & Online thesaurus \\
 In order to demonstrate the benefits of having such a framework, we applied the framework to five of the previously examined tools and show how its application can help in describing (and comparing) the features of these tools while revealing how the tools may be improved. Furthermore, we used the framework to guide the design of a novel tool.  Due to space constraints, we can only report one of these results here (see Section Framework Validation) and we direct the reader to~\cite{voyloshnikova2015} for full details on this validation.    
 
 {\subsection{Limitations}
-The case study we conducted has a number of limitations. A lack of documentation, research literature, and formal descriptions of available features for some applications introduces a threat to the construct validity of the study. In addition, information discovery tools and features can be used in unintended or unforeseen ways by designers and developers. Therefore, the recorded use of some features within information discovery applications was recorded in our interpretations. To compensate for such limitations, the researchers personally employed the tools over an extended period of time to gain a deeper understanding of their use. In addition, we considered some cases with similar functionality and design to be able to validate or clarify prior findings. 
+The case study we conducted has a number of limitations. A lack of documentation, research literature, and formal descriptions of available features for some applications introduces a threat to the construct validity of the study. In addition, information discovery tools and features can be used in unintended or unforeseen ways by designers and developers. Therefore, the recorded use of some features within information discovery applications was recorded in our interpretations. To compensate for such limitations, the researchers personally employed the tools over an extended period of time to gain a deeper understanding of their use. We also considered some cases with similar functionality and design to be able to validate or clarify prior findings. Additionally, framework validation was performed on five of the previously examined tools, introducing another limitation. 
 % CUTCANDIDATE
 %Many Web applications evolve rapidly. Therefore, our tool analysis only applies to tools at the moment of the study. 
 % CUTCANDIDATE
-Additionally, framework validation was performed on five of the previously examined tools, introducing another limitation. 
+
 %
 %Only Web applications running in browsers on a desktop computer were considered in this study. The study can be extended to various devices, such as smartphones and tablets, as information discovery patterns and mechanisms may vary for different platforms. 
 % CUTCANDIDATE
 
-Another limitation was the lack of prior research on the subject matter. Some researchers have studied information seeking models and high-level Web tasks, but there is a lack of literature on how to enable and support different Web tasks. This opens up opportunities for future research to analyze methods of developing and building frameworks for facilitating and evaluating tools that support other Web tasks, such as communication, transactions, and goal realization.
+%Another limitation was the lack of prior research on the subject matter. Some researchers have studied information seeking models and high-level Web tasks, but there is a lack of literature on how to enable and support different Web tasks. This opens up opportunities for future research to analyze methods of developing and building frameworks for facilitating and evaluating tools that support other Web tasks, such as communication, transactions, and goal realization.
 }
 \section{A Conceptual Framework for Information Discovery and Curation on the Web}
 \label{sec:framework}
@@ -299,7 +299,7 @@ The second part of the framework defines the \textit{actions} that comprise disc
 
 Actions can be further decomposed into \textit{operations} performed using mechanisms that enable the actions. For example, the information preservation (action) can be enabled using a bookmaking feature (enabling mechanism) so that users can bookmark information using the feature (operation). The third part of the framework deals with improving operations for information discovery and curation using cognitive support mechanisms. Cognitive support mechanisms differ form enablers in that they improve operations that could still take place without that support. They can be thought of improvements over existing enablers and can take a form of automation, personalization, etc.
 
-Our framework considers human motives and relates information discovery and curation actions with corresponding enabling mechanisms. We relate operations that arise from actions with corresponding cognitive support, personalization, and automation. One of our very early versions of the framework~\cite{voyloshnikova2014}, which has a different structure and an incomplete set of design features, also lacks the distinction between operations and actions, and the support they require. Similar terminology is used in Activity Theory~\cite{kuutti1996activity} to describe human practices. Figure~\ref{fig:framework_overview} gives a high-level overview of the framework and illustrates how the different components of the framework are connected.
+Our framework considers human motives and relates information discovery and curation actions with corresponding enabling mechanisms. We relate operations that arise from actions with corresponding cognitive support, personalization, and automation. One of our very early versions of the framework~\cite{voyloshnikova2014}, which has a different structure and an incomplete set of design features, also lacks the distinction between operations and actions, and the support they require. We borrow the terminology from the Activity Theory~\cite{kuutti1996activity} that is used to describe human practices. Figure~\ref{fig:framework_overview} gives a high-level overview of the framework and illustrates how the different components of the framework are connected. In the following we describe motives for information discovery and curation.
 
 
 \begin{figure}[ht!]
@@ -384,7 +384,7 @@ To discover information, a user needs a way to navigate to it. Navigation action
 \hline
 \multirow{2}{\linewidth}{\textbf{Types of navigation features}} & \multicolumn{2}{ p{0.7\linewidth} |}{\textbf{Questions to be posed during the design or evaluation of  discovery and curation tools and sample features}} \\\cline{2-3}
 
- & Enabling mechanisms & Cognitive support, personalization, and automation \\
+ & Enabling mechanisms & Cognitive support \\
 \hline
 \textbf{Descriptional} 			& \textbf{How does the application support descriptional navigation?} & \textbf{How can descriptional navigation mechanisms be enhanced?}\\
 &  Search-based navigation / Integrated search & Personalized results / Guided search\\
@@ -445,7 +445,7 @@ Exploration of resources is another action that facilitates the activity of info
 \hline
 \multirow{2}{\linewidth}{\textbf{Types of exploration features}}   & \multicolumn{2}{ p{0.7\linewidth} |}{\textbf{Questions to be posed during the design or evaluation of  discovery and curation tools and sample features}} \\\cline{2-3}
 
- & Enabling mechanisms & Cognitive support, personalization, and automation \\
+ & Enabling mechanisms & Cognitive support \\
 \hline
 \textbf{Visual and textual cues of multiple resources} & \textbf{How does the application use visual and textual cues to help identify resources of value?} & \textbf{How can visual and textual cues of multiple resources be enhanced?}\\
 & Visual preview / Textual preview & Personalized visual preview / Personalized textual preview \\
@@ -481,7 +481,7 @@ By definition, digital information curation is the notion of managing, preservin
 \hline
 \multirow{2}{\linewidth}{\textbf{Types of curation features}}   & \multicolumn{2}{ p{0.8\linewidth} |}{\textbf{Questions to be posed during the design or evaluation of  discovery and curation tools and sample features}} \\\cline{2-3}
 
- & Enabling mechanisms & Cognitive support, personalization, and automation \\
+ & Enabling mechanisms & Cognitive support \\
 \hline
 \textbf{Management} & \textbf{How does the application support management of information?} & \textbf{How can management of information be enhanced?}\\
 & Public or private collection-based categorization / Public or private tag-based categorization & Suggesting collections / Suggesting tags / Automated classification into collections / Automated tagging \\
