@@ -173,10 +173,10 @@ In summary, there are a multitude of tools that support different aspects of inf
 
 \section{Methodology}
 \label{section:methodology}
-Our methodology consisted of four steps. To gain a deeper understanding of the problem of information discovery and curation, we conducted an extensive literature review where we derived a preliminary set of information discovery and curation design elements and mechanisms and related them within a framework. The framework was then applied as part of the evaluation of 20 different information discovery applications and iteratively refined after every evaluation. Lastly, the framework was applied to a reevaluation of some of the previously evaluated tools with the purpose of validating its effectiveness. 
+To gain a deeper understanding of the task of information discovery and curation, we conducted an extensive literature review where we derived a preliminary set of information discovery and curation design elements and mechanisms and related them within a framework. The framework was then applied as part of the evaluation of 20 different information discovery applications and iteratively refined after every evaluation. In order to assess the value of the framework, it was applied in comparison of some of the previously evaluated tools, in evaluation of a an additional new tool, as well in design of a new application. 
 
 {\subsection{Research Questions and Objective}
-This study was designed to address the problem of designing Web applications for information discovery and was motivated by the following:
+This study was designed to address the challenge of designing Web applications for information discovery and was motivated by the following:
 
 \emph{RQ1:~How do existing Web applications support information discovery?}
 
@@ -276,7 +276,7 @@ Thesaurus       & thesaurus.com         & Online thesaurus \\
 {\subsection{Framework Validation}
 \label{subsection:validating}
 % ELENA: check this!
-In order to demonstrate the benefits of having such a framework, we applied the framework to five of the previously examined tools and show how its application can help in describing (and comparing) the features of these tools while revealing how the tools may be improved. Furthermore, we used the framework to guide the design of a novel tool.  Due to space constraints, we can only report one of these results here (see Section Framework Validation) and we direct the reader to~\cite{voyloshnikova2015} for full details on this validation.    
+In order to demonstrate the benefits of having such a framework, we applied the framework to five of the previously examined tools and show how its application can help in describing (and comparing) the features of these tools while revealing how the tools may be improved. Furthermore, we evaluated a tool that we have not previously evaluated, and we used the framework to guide the design of a novel tool.  
 
 {\subsection{Limitations}
 The case study we conducted has a number of limitations. A lack of documentation, research literature, and formal descriptions of available features for some applications introduces a threat to the construct validity of the study. In addition, information discovery tools and features can be used in unintended or unforeseen ways by designers and developers. Therefore, the recorded use of some features within information discovery applications was recorded in our interpretations. To compensate for such limitations, the researchers personally employed the tools over an extended period of time to gain a deeper understanding of their use. We also considered some cases with similar functionality and design to be able to validate or clarify prior findings. Additionally, framework validation was performed on five of the previously examined tools, introducing another limitation. 
@@ -293,11 +293,11 @@ The case study we conducted has a number of limitations. A lack of documentation
 \section{A Conceptual Framework for Information Discovery and Curation on the Web}
 \label{sec:framework}
 
-In our framework, we build on existing models and frameworks of information discovery and curation and our analysis of existing Web tools to derive corresponding design factors for Web design. The first part of the framework deals with the \textit{motives} behind information discovery and curation. These motives often define use cases for Web application design and help set initial assumptions about the required functionality.
+In our framework, we build on existing models and frameworks of information discovery and curation and our analysis of existing Web tools to derive corresponding design factors for Web design. The first part of the framework (see Figure~\ref{fig:framework_overview}, Part A) deals with the \textit{motives} behind information discovery and curation. These motives often define use cases for Web application design and help set initial assumptions about the required functionality.
 
-The second part of the framework defines the \textit{actions} that comprise discovery and curation activities, and the design factors that enable them. Some examples of actions include managing and preserving information. To support these actions, a Web-based application must provide corresponding mechanisms, such as bookmarking and tagging capabilities.
+The second part of the framework (see Figure~\ref{fig:framework_overview}, Part B) defines the \textit{actions} that comprise discovery and curation activities, and the design factors that enable them. Some examples of actions include managing and preserving information. To support these actions, a Web-based application must provide corresponding mechanisms, such as bookmarking and tagging capabilities.
 
-Actions can be further decomposed into \textit{operations} performed using mechanisms that enable the actions. For example, the information preservation (action) can be enabled using a bookmaking feature (enabling mechanism) so that users can bookmark information using the feature (operation). The third part of the framework deals with improving operations for information discovery and curation using cognitive support mechanisms. Cognitive support mechanisms differ form enablers in that they improve operations that could still take place without that support. They can be thought of improvements over existing enablers and can take a form of automation, personalization, etc.
+Actions can be further decomposed into \textit{operations} performed using mechanisms that enable the actions. For example, the information preservation (action) can be enabled using a bookmaking feature (enabling mechanism) so that users can bookmark information using the feature (operation). The third part of the framework (see Figure~\ref{fig:framework_overview}, Part C) deals with improving operations for information discovery and curation using cognitive support mechanisms. Cognitive support mechanisms differ form enablers in that they improve operations that could still take place without that support. They can be thought of improvements over existing enablers and can take a form of automation, personalization, etc.
 
 Our framework considers human motives and relates information discovery and curation actions with corresponding enabling mechanisms. We relate operations that arise from actions with corresponding cognitive support, personalization, and automation. One of our very early versions of the framework~\cite{voyloshnikova2014}, which has a different structure and an incomplete set of design features, also lacks the distinction between operations and actions, and the support they require. We borrow the terminology from the Activity Theory~\cite{kuutti1996activity} that is used to describe human practices. Figure~\ref{fig:framework_overview} gives a high-level overview of the framework and illustrates how the different components of the framework are connected. In the following we describe motives for information discovery and curation.
 
@@ -377,32 +377,6 @@ The next part of the framework deals with the actions associated with enablers o
 {\subsubsection{Action: Navigation in Discovery (Following Information Scent)}
 To discover information, a user needs a way to navigate to it. Navigation action in information discovery can be thought of as following an information scent. In general, the information scent models deal with how users identify value, cost, or the access path of information sources based on proximal cues, such as links, icons, categories, etc.~\cite{pirolli1999information}. Common types of navigation actions that facilitate information discovery activity include descriptional, referential, opportunistic, and system-regulated navigation.  We describe these types of navigation actions below and direct the reader to Table~\ref{table:framework_navigation} to see an overview of these actions and the enablers possible for each action. 
 
-
-\begin{table}[!htbp]
-\small
-\begin{tabular}{|p{0.25\linewidth}| p{0.35\linewidth}| p{0.35\linewidth}|}
-\hline
-\multirow{2}{\linewidth}{\textbf{Types of navigation features}} & \multicolumn{2}{ p{0.7\linewidth} |}{\textbf{Questions to be posed during the design or evaluation of  discovery and curation tools and sample features}} \\\cline{2-3}
-
- & Enabling mechanisms & Cognitive support \\
-\hline
-\textbf{Descriptional} 			& \textbf{How does the application support descriptional navigation?} & \textbf{How can descriptional navigation mechanisms be enhanced?}\\
-&  Search-based navigation / Integrated search & Personalized results / Guided search\\
-				
-\textbf{Referential}       		& \textbf{How does the application support referential navigation?} & \textbf{How can referential navigation mechanisms be enhanced?}\\
-& Categories / Facets / Filters / Tags / Search by item or resource / Integrated reference & Suggesting categories / Suggesting topics of interest / Suggesting tags / Suggesting similar resources \\
-				    		
-\textbf{Opportunistic}          & \textbf{How does the application support opportunistic navigation?}& \textbf{How can opportunistic navigation mechanisms be enhanced?}\\
-& Opportunistic navigation feature / Integrated opportunistic navigation & Personalized opportunistic navigation \\
-\textbf{System-regulated}       &\textbf{How does the application support system-regulated navigation?} & \textbf{How can system-regulated navigation mechanisms be enhanced?}\\
-& Static direct display / Integrated static display / Featured content / Integrated featured content / News feed / Integrated news feed & Personalized featured content / User activity update notification / Application activity update notification / Artifact update notification \\
-    
-\hline
-\end{tabular}
-\caption{Types of Navigation Features and Related Questions}
-\label{table:framework_navigation} 
-\end{table}
-
 \textbf{Descriptional Navigation (Type of Navigation Action):} A navigation action is descriptional when the user has a means of describing their information need. It is usually implemented as \feature{search-based navigation} since it allows users to enter a search query and describe what they want to find.  
 % CUTCANDIDATE we mention Stumbleupon below and integration
 %Some applications use other methods of navigation, such as StumbleUpon and some Web applications are \feature{integrated} with others, enabling users to search multiple Websites at once. 
@@ -435,9 +409,39 @@ Web applications often display information without the user's active participati
 %
 One application that supports system-regulated navigation action is Yelp. As soon as the user enters the site, this tool displays featured restaurants as well as the user's recent activities. As with any other navigation actions, system-regulated navigation can ensure cross-application \feature{integration} by displaying content from other Web applications. 
 
+\begin{table}[!htbp]
+\small
+\begin{tabular}{|p{0.25\linewidth}| p{0.35\linewidth}| p{0.35\linewidth}|}
+\hline
+\multirow{2}{\linewidth}{\textbf{Types of navigation features}} & \multicolumn{2}{ p{0.7\linewidth} |}{\textbf{Questions to be posed during the design or evaluation of  discovery and curation tools and sample features}} \\\cline{2-3}
+
+ & Enabling mechanisms & Cognitive support \\
+\hline
+\textbf{Descriptional} 			& \textbf{How does the application support descriptional navigation?} & \textbf{How can descriptional navigation mechanisms be enhanced?}\\
+&  Search-based navigation / Integrated search & Personalized results / Guided search\\
+				
+\textbf{Referential}       		& \textbf{How does the application support referential navigation?} & \textbf{How can referential navigation mechanisms be enhanced?}\\
+& Categories / Facets / Filters / Tags / Search by item or resource / Integrated reference & Suggesting categories / Suggesting topics of interest / Suggesting tags / Suggesting similar resources \\
+				    		
+\textbf{Opportunistic}          & \textbf{How does the application support opportunistic navigation?}& \textbf{How can opportunistic navigation mechanisms be enhanced?}\\
+& Opportunistic navigation feature / Integrated opportunistic navigation & Personalized opportunistic navigation \\
+\textbf{System-regulated}       &\textbf{How does the application support system-regulated navigation?} & \textbf{How can system-regulated navigation mechanisms be enhanced?}\\
+& Static direct display / Integrated static display / Featured content / Integrated featured content / News feed / Integrated news feed & Personalized featured content / User activity update notification / Application activity update notification / Artifact update notification \\
+    
+\hline
+\end{tabular}
+\caption{Types of Navigation Features and Related Questions}
+\label{table:framework_navigation} 
+\end{table}
 
 {\subsubsection{Action: Exploration in Discovery (Examining Information Patches)}
 Exploration of resources is another action that facilitates the activity of information discovery. Visual and spatial cues, which help representing single or multiple resources, serve as enablers for this action by allowing users to conveniently examine information patches (please refer to Table~\ref{table:framework_exploration}). 
+
+\textbf{Visual and Textual Previews (Exploration Enablers):} Abrams et al.~\cite{abrams1998information} identified link representation as one of the problems with traditional bookmarking. Analogous with browsing through a bookmark manager, identifying relevant information when browsing through links in a Web application can be a challenging task. \feature{Visual previews} and \feature{textual previews} make it easier to evaluate the relevance of resources by providing the user with more information scent and thereby serving as enablers for the action of exploration. Many social bookmarking systems, such as Scoop.it! and Pinterest, support visual previews of bookmarked pages. Delicious is a social bookmarking application that lacks this type of link representation support, and so it is harder to determine if a link will lead to a relevant resource.
+
+\textbf{Visual and Textual Cues (Exploration Enablers):} \feature{Visual and textual information cues} are also important enablers for the action of exploration. Not only do they help navigation within the resource or Web page, but they can also contribute to the learning experience. For example, if the user would like to know what something looks like, they can learn it from the representation in question.  
+
+\textbf{Spatial Visualizations (Exploration Enablers):} Similar to link representation, effective spatial visualization of numerous links can be another challenge of supporting exploration of diverse content~\cite{abrams1998information}. Therefore, a semantic to the \feature{spatial arrangement} of information (single and multiple resources) is of major importance. Information discovery applications often employ sophisticated ways of spatially arranging resources to make it easier to browse through large amounts of information. Common ways of arranging multiple resources include \feature{list}, \feature{grid}, and \feature{gallery} layouts. Additionally, \feature{consistency} in the way multiple and single resources are represented is another enabler that helps form a conceptual model of how the application can be used and provides some degree of predictability~\cite{norman2002design}.
 
 \begin{table}[!htbp]
 \small
@@ -461,12 +465,6 @@ Exploration of resources is another action that facilitates the activity of info
 \caption{Types of Exploration Features and Related Questions}
 \label{table:framework_exploration} 
 \end{table}
-
-\textbf{Visual and textual previews (exploration enablers):} Abrams et al.~\cite{abrams1998information} identified link representation as one of the problems with traditional bookmarking. Analogous with browsing through a bookmark manager, identifying relevant information when browsing through links in a Web application can be a challenging task. \feature{Visual previews} and \feature{textual previews} make it easier to evaluate the relevance of resources by providing the user with more information scent and thereby serving as enablers for the action of exploration. Many social bookmarking systems, such as Scoop.it! and Pinterest, support visual previews of bookmarked pages. Delicious is a social bookmarking application that lacks this type of link representation support, and so it is harder to determine if a link will lead to a relevant resource.
-
-\textbf{Visual and textual cues (exploration enablers):} \feature{Visual and textual information cues} are also important enablers for the action of exploration. Not only do they help navigation within the resource or Web page, but they can also contribute to the learning experience. For example, if the user would like to know what something looks like, they can learn it from the representation in question.  
-
-\textbf{Spatial visualizations (exploration enablers):} Similar to link representation, effective spatial visualization of numerous links can be another challenge of supporting exploration of diverse content~\cite{abrams1998information}. Therefore, a semantic to the \feature{spatial arrangement} of information (single and multiple resources) is of major importance. Information discovery applications often employ sophisticated ways of spatially arranging resources to make it easier to browse through large amounts of information. Common ways of arranging multiple resources include \feature{list}, \feature{grid}, and \feature{gallery} layouts. Additionally, \feature{consistency} in the way multiple and single resources are represented is another enabler that helps form a conceptual model of how the application can be used and provides some degree of predictability~\cite{norman2002design}.
 } % end section
 
 {\subsection{Activity: Curation}
@@ -475,32 +473,8 @@ Information curation is a common activity across many information discovery appl
 Information discovery applications vary from being completely socially curated and populated by users, to those that lack any curation mechanisms. 
 By definition, digital information curation is the notion of managing, preserving, and adding value to collections of information ~\cite{beagrie2008digital,whittaker2011personal}. Thus, curation activity consists of actions such as information management, preservation, information augmentation, sharing, and channel-picking. Refer to Table~\ref{table:framework_curation} for this part of the framework.
 
-\begin{table}[!htbp]
-\small
-\begin{tabular}{|p{0.2\linewidth}| p{0.45\linewidth}| p{0.4\linewidth}|}
-\hline
-\multirow{2}{\linewidth}{\textbf{Types of curation features}}   & \multicolumn{2}{ p{0.8\linewidth} |}{\textbf{Questions to be posed during the design or evaluation of  discovery and curation tools and sample features}} \\\cline{2-3}
-
- & Enabling mechanisms & Cognitive support \\
-\hline
-\textbf{Management} & \textbf{How does the application support management of information?} & \textbf{How can management of information be enhanced?}\\
-& Public or private collection-based categorization / Public or private tag-based categorization & Suggesting collections / Suggesting tags / Automated classification into collections / Automated tagging \\
-\textbf{Preservation} & \textbf{How does the application support preservation of information?} & \textbf{How can preservation of information be enhanced?}\\
-& Internal preservation of internal resources / Internal preservation of external resources / External preservation of internal resources & History / Suggested preservation  \\
-\textbf{Augmentation} & \textbf{How does the application support augmentation of information?} & \textbf{How can augmentation of information be enhanced?}\\
-& Annotation / Evaluation & Automated augmentation / Suggested augmentation \\ 
-\textbf{Sharing} & \textbf{How does the application support sharing of information?} & \textbf{How can sharing of information be enhanced?}\\
-& Adding resources / Internal sharing / External sharing & Automated sharing / Suggested sharing \\
-\textbf{Channel-picking}  	& \textbf{How does the application support the user in establishing their information preferences?} & \textbf{How can establishment of information preferences be enhanced?}\\
-& User subscription / Site subscription / Artifact subscription & Suggesting users for subscription / Suggesting artifacts for subscription / Automated subscription \\     
-\hline
-\end{tabular}
-\caption{Types of Curation Features and Related Questions}
-\label{table:framework_curation} 
-\end{table}
-
 % Elena being consistent with formatting above ...
-\textbf{Action: Information management.} Information management is one of the key actions of the information curation activity ~\cite{beagrie2008digital,whittaker2011personal}. Its enablers are prevalent in applications that have a lot of information that is hard to categorize automatically or can mean something different for each user. In the context of Web information management, \feature{tag} and \feature{collection-based} information categorization enablers play major roles.
+\textbf{Action: Information Management.} Information management is one of the key actions of the information curation activity ~\cite{beagrie2008digital,whittaker2011personal}. Its enablers are prevalent in applications that have a lot of information that is hard to categorize automatically or can mean something different for each user. In the context of Web information management, \feature{tag} and \feature{collection-based} information categorization enablers play major roles.
 %
 Resource categorization also helps establish relationships between various resources ~\cite{beagrie2008digital,whittaker2011personal}. Tagging can aid rediscovery and discovery in a socially curated space, as well as add more value to resources~\cite{gruber2007ontology}. Sample applications that facilitate these types of information management actions are Pinterest, a tool that supports tagging and collection-based categorization, and Tumblr, a tool that supports tagging.
 
@@ -509,9 +483,11 @@ Tagging is also an example of how different enablers can potentially overlap sin
 
 %} % end subsubsection
 
-\textbf{Action: Information preservation.} Information preservation is a common information curation action that is usually performed with the intent of revisiting information~\cite{abrams1998information,whittaker2011personal}. However, information gathering that involves information preservation is sometimes performed with just the goal of collecting information~\cite{lindley2012s}. 
+\textbf{Action: Information Preservation.} Information preservation is a common information curation action that is usually performed with the intent of revisiting information~\cite{abrams1998information,whittaker2011personal}. However, information gathering that involves information preservation is sometimes performed with just the goal of collecting information~\cite{lindley2012s}. 
 %
 Bookmarking is a traditional type of information preservation action. Having the \feature{internal preservation of internal resources} enabler means bookmarking resources can be reaccessed within the same application. Such an enabler facilitates information curation within the system. The \feature{internal preservation of external resources} enabler facilitates bookmarking other Web pages within an application. Having the \feature{external preservation} enabler means bookmarking resources so that they are available through other bookmarking systems. An application must facilitate integration with other applications to enable the external preservation type of information preservation action~\cite{abrams1998information}.
+
+It is worth mentioning that although some aspects of information management and information preservation as well as their supporting enablers may overlap, they are two different actions in that the former action involves some form of categorization with a goal of making sense of the information, whereas the latter only has to do with preserving information. For example, information can be bookmarked (preserved) without being categorized (managed). 
 %
 % CUTCANDIDATE
 %For example, in the We Heart It image discovery application users can preserve \feature{internal  information} using \feature{internal collections} and they can add information from \feature{external} websites. However, there are no integrated means for bookmarking \feature{internal content} using other bookmarking systems. 
@@ -539,6 +515,31 @@ Sharing resources through different media and resharing them within the Web appl
 %
 In some applications, the content is updated and curated by users, and users can \feature{subscribe} to other \feature{users} or \feature{artifacts}. Similar to site subscriptions, user and artifact subscriptions are subscriptions to activity updates. These subscription mechanisms help with networking and provide awareness about other users' activities~\cite{millen2005social}. Such subscriptions also help filter new content delivered to the user. 
 %} % end subsubsection
+
+\begin{table}[!htbp]
+\small
+\begin{tabular}{|p{0.2\linewidth}| p{0.45\linewidth}| p{0.4\linewidth}|}
+\hline
+\multirow{2}{\linewidth}{\textbf{Types of curation features}}   & \multicolumn{2}{ p{0.8\linewidth} |}{\textbf{Questions to be posed during the design or evaluation of  discovery and curation tools and sample features}} \\\cline{2-3}
+
+ & Enabling mechanisms & Cognitive support \\
+\hline
+\textbf{Management} & \textbf{How does the application support management of information?} & \textbf{How can management of information be enhanced?}\\
+& Public or private collection-based categorization / Public or private tag-based categorization & Suggesting collections / Suggesting tags / Automated classification into collections / Automated tagging \\
+\textbf{Preservation} & \textbf{How does the application support preservation of information?} & \textbf{How can preservation of information be enhanced?}\\
+& Internal preservation of internal resources / Internal preservation of external resources / External preservation of internal resources & History / Suggested preservation  \\
+\textbf{Augmentation} & \textbf{How does the application support augmentation of information?} & \textbf{How can augmentation of information be enhanced?}\\
+& Annotation / Evaluation & Automated augmentation / Suggested augmentation \\ 
+\textbf{Sharing} & \textbf{How does the application support sharing of information?} & \textbf{How can sharing of information be enhanced?}\\
+& Adding resources / Internal sharing / External sharing & Automated sharing / Suggested sharing \\
+\textbf{Channel-picking}  	& \textbf{How does the application support the user in establishing their information preferences?} & \textbf{How can establishment of information preferences be enhanced?}\\
+& User subscription / Site subscription / Artifact subscription & Suggesting users for subscription / Suggesting artifacts for subscription / Automated subscription \\     
+\hline
+\end{tabular}
+\caption{Types of Curation Features and Related Questions}
+\label{table:framework_curation} 
+\end{table}
+
 } % end subsection
 
 % CUTCANDIDATE
@@ -562,8 +563,7 @@ To further support referential navigation, applications can \feature{personalize
 
 For opportunistic navigation, Web tools sometimes allow users to \feature{personalize} types or categories of information that they the users would like to discover. StumbleUpon allows users to not only choose topics of interests, but it can also help them discover new promising topics.
 
-
-Featured content can also be \feature{personalized} to improve information discovery with system-regulated navigation. For example, Yelp showcases restaurants from a predefined area, such as the city where the user is from.
+Featured content can also be \feature{personalized} as well as customized to improve information discovery with system-regulated navigation. For example, Yelp showcases restaurants from a predefined area, such as the city where the user is from.
 
 Finally, to make better use of subscribed content and to reduce human efforts when searching, an application can support various \feature{notification mechanisms}. These can advise the user about updates on the \feature{Website content}, various \feature{artifacts}, and activities of other \feature{users}.  
 
@@ -773,7 +773,7 @@ The conceptual framework for information discovery and curation is designed to p
 
 In the previous section, we demonstrated how the framework can be used to reveal missing features in tools. Using similar methods, the framework can also be applied to compare different Web applications. When used for evaluation, the framework helps to identify which areas of a tool require further attention. Therefore, the framework can be helpful for designers who wish to improve existing tools or get ideas for new information discovery and curation applications. 
 
-Enablers, cognitive support elements, and questions of the framework are there to guide the developer and may expose gaps, but they do not dictate which features should be in an application. It is up to designers to decide whether to close those gaps, and some gaps cannot be closed because of certain constraints or trade-offs that have to be made, such as data type and system design.
+Enablers, cognitive support elements, and questions of the framework are there to guide the developer and may expose gaps, but they do not dictate which features should be in an application. It is up to designers to decide whether to close those gaps, and some gaps cannot be closed because of certain constraints or trade-offs that have to be made, such as data type and system design. 
 
 % CUTCANDIDATE
 %User interface designers face certain trade-offs when developing applications. Therefore, it is not always advantageous to implement all missing features. For example, providing the support to customize spatial arrangement of multiple resources can undermine the consistency of their representation. 
@@ -781,7 +781,7 @@ Enablers, cognitive support elements, and questions of the framework are there t
 
 Even though applying the framework requires initial expertise and critical reasoning, it opens up opportunities for research and practice. 
 For the research domain, the framework can serve as a guide for drawing distinctions between different Web-based information discovery and curation applications, finding gaps in tools, and selecting cases for studies based on required functionality. 
-While, systematic evaluation of Web tools for information discovery and curation helps the designer improve user experience and gain better understanding of information behaviour within a given system. 
+While in practice, systematic evaluation of Web tools for information discovery and curation helps the designer improve user experience and gain better understanding of information behaviour within a given system. With its ability to guide the designer through the required mechanisms and features, the framework closes a gap in research when it comes to tool support for information-related activities in Web applications.
 
 \section{Future Work and Conclusions}
 \label{section:future_work}
